@@ -1170,3 +1170,11 @@ button { font: inherit; cursor: pointer; }
 	.contenu .hvb-blason .wp-block-image { max-width: 170px; }
 	.contenu .hvb-genese .wp-block-image { max-width: 420px; margin-inline: auto; }
 }
+
+/* Menu mobile ouvert : l'en-tête se fixe tout en haut de l'écran (au-dessus de tout bandeau)
+   et le menu s'ouvre exactement dessous, quelle que soit la position dans la page. */
+@media (max-width: 1100px) {
+	.menu-ouvert .entete { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
+	.menu-ouvert .entete::after { display: none; }
+	.menu-ouvert .nav { top: var(--entete-h); overscroll-behavior: contain; }
+}
