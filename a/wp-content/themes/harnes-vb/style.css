@@ -1077,3 +1077,92 @@ button { font: inherit; cursor: pointer; }
 
 .billetterie__pied { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 14px; }
 .billetterie__pied .billetterie__note { margin: 0; }
+
+/* =====================================================================
+   Mobile et tablette : en-tête épuré, menu plein écran, rythme allégé
+   ===================================================================== */
+.nav__suivez { display: none; }
+@media (max-width: 1100px) {
+	/* En-tête : logo et nom à gauche, billet et menu tout à droite */
+	.entete__barre { gap: 12px; }
+	.entete__nom { display: block; font-size: 13px; }
+	.entete__nom strong { font-size: 18px; }
+	.entete__actions { margin-left: auto; gap: 8px; }
+	.burger { width: 46px; height: 46px; margin-right: -8px; padding: 12px; border-radius: 8px; }
+	.burger span { height: 2.5px; border-radius: 2px; }
+	.burger span:nth-child(2) { width: 70%; margin-left: auto; transition: width .25s, opacity .25s; }
+	.menu-ouvert .burger span:nth-child(2) { width: 100%; }
+
+	/* Menu plein écran : grandes lignes nettes, sous-menus dépliables, billetterie et réseaux en bas */
+	.nav { display: flex; flex-direction: column; padding: 8px max(20px, env(safe-area-inset-left, 0px)) 32px; background: var(--noir); opacity: 0; transform: translateX(24px); visibility: hidden; transition: opacity .25s, transform .3s, visibility .3s; }
+	.menu-ouvert .nav { opacity: 1; transform: none; visibility: visible; }
+	.nav__liste { flex: none; }
+	.nav__liste > li { border-bottom: 1px solid rgba(255,255,255,.08); opacity: 0; transform: translateX(16px); transition: opacity .35s, transform .35s; }
+	.menu-ouvert .nav__liste > li { opacity: 1; transform: none; }
+	.menu-ouvert .nav__liste > li:nth-child(2) { transition-delay: .04s; } .menu-ouvert .nav__liste > li:nth-child(3) { transition-delay: .08s; }
+	.menu-ouvert .nav__liste > li:nth-child(4) { transition-delay: .12s; } .menu-ouvert .nav__liste > li:nth-child(5) { transition-delay: .16s; }
+	.menu-ouvert .nav__liste > li:nth-child(6) { transition-delay: .2s; } .menu-ouvert .nav__liste > li:nth-child(7) { transition-delay: .24s; }
+	.menu-ouvert .nav__liste > li:nth-child(8) { transition-delay: .28s; }
+	.nav__liste > li > a { display: flex; justify-content: space-between; align-items: center; padding: 17px 2px; font-size: 21px; letter-spacing: .06em; }
+	.nav .menu-item-has-children > a::after {
+		content: ''; position: static; display: block; width: 9px; height: 9px; background: none; transform: rotate(45deg);
+		border-right: 2px solid var(--rouge); border-bottom: 2px solid var(--rouge); margin: -4px 4px 0 0; transition: transform .25s;
+	}
+	.nav .menu-item-has-children.is-ouvert > a::after { transform: rotate(-135deg); margin-top: 4px; }
+	.nav .sub-menu { padding: 0 0 14px 2px; }
+	.nav .sub-menu a { padding: 9px 0 9px 14px; font-size: 16px; color: #b9b9c0; border-left: 2px solid rgba(255,255,255,.12); }
+	.nav .sub-menu .current-menu-item > a { color: var(--blanc); border-left-color: var(--rouge); background: none; }
+	.nav__mobile-pied { margin-top: auto; padding-top: 28px; display: grid; gap: 14px; }
+	.nav__suivez { display: block; margin: 8px 0 0; font: 700 12px/1 var(--titre); letter-spacing: .16em; text-transform: uppercase; color: var(--gris); }
+	.nav__mobile-pied .reseaux { gap: 8px; }
+	.nav__mobile-pied .reseaux a { width: 42px; height: 42px; background: var(--noir-3); }
+}
+@media (max-width: 760px) {
+	/* Les réseaux sont dans le menu et le pied de page : la barre du haut disparaît */
+	.barre-haut { display: none; }
+	:root { --entete-h: 64px; }
+	.entete__logo img { width: 42px; height: 42px; }
+	.entete__billetterie { width: 44px; height: 44px; padding: 0; border-radius: 8px; }
+	.entete__billetterie span { display: none; }
+	.entete__billetterie .icone { width: 20px; height: 20px; }
+	.admin-bar .entete { top: 0; }
+
+	/* Rythme vertical et tailles adaptés au téléphone */
+	body { font-size: 16px; }
+	.bandeau, .bandeau--image { min-height: 0; padding: 56px 0 64px; }
+	.bandeau__titre { font-size: clamp(38px, 11vw, 52px); }
+	.bandeau__suite { display: none; }
+	.ouverture { min-height: calc(82svh - var(--entete-h)); }
+	.ouverture__titre { font-size: clamp(46px, 13vw, 60px); }
+	.devise__photo { height: 260px; }
+	.devise__texte { padding-block: 48px; }
+	.devise__titre { font-size: 36px; }
+	.carrousel { min-height: 380px; height: 62svh; }
+	.carrousel__titre { font-size: 28px; padding-inline: 4px; }
+	.carrousel__texte { bottom: 54px; }
+	.centre-match { padding-block: 40px; }
+	.carte { padding: 18px 16px; border-radius: 12px; }
+	.affiche { padding: 14px 10px; }
+	.affiche__score { font-size: 34px; }
+	.compte strong { font-size: 28px; }
+	.bloc { padding: 48px max(18px, env(safe-area-inset-left, 0px)); }
+	.contenu .bloc__entete h2, .contenu h2 { font-size: clamp(28px, 8.5vw, 36px); }
+	.contenu--large > h2 { margin-top: 56px; }
+	.contenu .hvb-genese, .contenu .hvb-acces, .contenu .hvb-citation, .contenu .hvb-labels { padding-block: 48px; }
+	.contenu .hvb-photo-pastilles .wp-block-image img { aspect-ratio: 4 / 3; }
+	.pastille-chiffre { padding: 14px 16px; }
+	.pastille-chiffre strong { font-size: 46px; }
+	.hvb-epoque summary { font-size: 18px; padding: 15px 2px; gap: 12px; }
+	.hvb-epoque summary::before { width: 26px; height: 26px; font-size: 17px; }
+	.hvb-epoque > *:not(summary) { margin-left: 38px; }
+	.hvb-chiffres strong { font-size: 48px; }
+	.hvb-chiffres .chiffre { padding: 18px 8px; }
+	.couleur { min-height: 0; padding: 26px 20px; }
+	.titre-section { font-size: 38px; }
+	.appel { padding-block: 40px; }
+	.appel__titre { font-size: 30px; }
+	.appel__actions { width: 100%; }
+	.appel__actions .bouton { flex: 1; }
+	.pied__grille { padding-block: 44px 32px; gap: 28px; }
+	.js .revele { transform: translateY(18px); }
+}
