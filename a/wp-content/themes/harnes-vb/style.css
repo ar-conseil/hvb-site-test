@@ -260,7 +260,7 @@ button { font: inherit; cursor: pointer; }
 .centre-match { position: relative; overflow: hidden; padding-block: clamp(56px, 7vw, 100px); background: var(--noir); }
 .centre-match::before {
 	content: ''; position: absolute; inset: -40px;
-	background: var(--fond-centre, none) center / cover;
+	background: center / cover no-repeat;
 	filter: blur(14px) brightness(.45);
 }
 .centre-match > .conteneur { position: relative; }
@@ -1074,3 +1074,6 @@ button { font: inherit; cursor: pointer; }
 /* Menu : l'équipe première (Volstar M2) en rouge */
 .nav__liste > li.menu-volstar > a { color: #ff4d4d; }
 .nav__liste > li.menu-volstar > a:hover, .nav__liste > li.menu-volstar.current-menu-ancestor > a { color: #ff7070; }
+
+.billetterie__pied { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 14px; }
+.billetterie__pied .billetterie__note { margin: 0; }
