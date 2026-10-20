@@ -1166,3 +1166,7 @@ button { font: inherit; cursor: pointer; }
 	.pied__grille { padding-block: 44px 32px; gap: 28px; }
 	.js .revele { transform: translateY(18px); }
 }
+@media (max-width: 760px) {
+	.contenu .hvb-blason .wp-block-image { max-width: 170px; }
+	.contenu .hvb-genese .wp-block-image { max-width: 420px; margin-inline: auto; }
+}
