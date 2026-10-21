@@ -1593,3 +1593,72 @@ body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-blo
 .feminine-photos figure { aspect-ratio: auto; height: clamp(260px, 30vw, 440px); }
 @media (max-width: 860px) { .feminine-photos figure { height: 46vw; } .feminine-photos figure:first-child { aspect-ratio: auto; height: 72vw; } }
 .visuellement-cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ===== Classement LNV : lignes en cartes, logos des clubs, HVB mis en avant ===== */
+table.cl { width: 100%; border-collapse: separate; border-spacing: 0 8px; font-size: 16px; }
+table.cl th { padding: 4px 12px; border: 0; color: var(--gris); font: 700 12px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; text-align: center; }
+table.cl th.cl__equipe { text-align: left; }
+table.cl td { padding: 14px 12px; border: 0; background: var(--blanc); text-align: center; font: 600 17px/1 var(--titre); color: #3e3e44; transition: background .25s; }
+table.cl td:first-child { width: 56px; padding-left: 16px; border-radius: 12px 0 0 12px; color: inherit; font-family: var(--titre); }
+table.cl td:last-child { padding-right: 18px; border-radius: 0 12px 12px 0; }
+table.cl tbody tr { box-shadow: 0 2px 10px rgba(0,0,0,.05); transition: transform .25s; }
+table.cl tbody tr:hover { transform: translateX(4px); }
+.cl__rang span { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--gris-clair); color: var(--noir); font: italic 800 17px/1 var(--titre); }
+table.cl tbody tr:first-child .cl__rang span { background: var(--noir); color: var(--blanc); }
+table.cl td.cl__equipe { text-align: left; }
+.cl__equipe { display: flex; align-items: center; gap: 14px; }
+table.cl td.cl__equipe { display: table-cell; }
+.cl__equipe img { width: 40px; height: 40px; object-fit: contain; vertical-align: middle; margin-right: 12px; }
+.cl__nom { font: 800 19px/1 var(--titre); text-transform: uppercase; color: var(--noir); vertical-align: middle; }
+.cl__penalite { display: inline-block; margin-left: 10px; padding: 4px 8px; border-radius: 999px; background: #fdecec; color: var(--rouge); font: 700 12px/1 var(--titre); letter-spacing: .06em; vertical-align: middle; }
+table.cl td.cl__points { font: italic 800 26px/1 var(--titre); color: var(--noir); }
+table.cl tr.is-hvb td { background: var(--noir); color: #d6d6db; font-weight: 600; }
+table.cl tr.is-hvb td:first-child { box-shadow: inset 5px 0 var(--rouge); }
+table.cl tr.is-hvb .cl__rang span { background: var(--rouge); color: var(--blanc); }
+table.cl tr.is-hvb .cl__nom, table.cl tr.is-hvb td.cl__points { color: var(--blanc); }
+table.cl tr.is-hvb .cl__penalite { background: var(--rouge); color: var(--blanc); }
+
+/* Version compacte (accueil) */
+.classement table.cl { border-spacing: 0 5px; }
+table.cl--compact td { padding: 8px 8px; font-size: 15px; background: var(--gris-clair); }
+table.cl--compact td:first-child { width: 40px; padding-left: 10px; }
+table.cl--compact .cl__rang span { width: 28px; height: 28px; font-size: 15px; background: var(--blanc); }
+table.cl--compact .cl__equipe img { width: 28px; height: 28px; margin-right: 8px; }
+table.cl--compact .cl__nom { font-size: 16px; }
+table.cl--compact td.cl__points { font-size: 20px; }
+table.cl--compact .cl__penalite { display: none; }
+table.cl--compact tbody tr { box-shadow: none; }
+
+/* Page Classement */
+.classement-page { max-width: 1040px; }
+.hvb-rang { display: flex; align-items: center; justify-content: space-between; gap: 24px 40px; flex-wrap: wrap; margin-bottom: 34px; padding: 28px 32px; border-radius: 18px; background: radial-gradient(circle at 100% 0%, rgba(208,24,24,.35), transparent 55%), var(--noir); color: var(--blanc); }
+.hvb-rang__equipe { display: flex; align-items: center; gap: 18px; }
+.hvb-rang .surtitre { margin: 0 0 6px; color: #ff4d4d; }
+.hvb-rang__place { margin: 0; font: 700 20px/1 var(--titre); text-transform: uppercase; letter-spacing: .04em; color: #d6d6db; }
+.hvb-rang__place strong { margin-right: 6px; color: var(--blanc); font: italic 800 64px/1 var(--titre); }
+.hvb-rang__place sup { font-size: 26px; }
+.hvb-rang__chiffres { display: flex; gap: 10px; margin: 0; }
+.hvb-rang__chiffres div { min-width: 84px; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,.07); text-align: center; }
+.hvb-rang__chiffres dt { color: #b9b9c0; font: 700 12px/1 var(--titre); letter-spacing: .12em; text-transform: uppercase; }
+.hvb-rang__chiffres dd { margin: 8px 0 0; font: italic 800 30px/1 var(--titre); }
+.classement-page__source { margin: 22px 0 0; color: var(--gris); font-size: 14px; text-align: center; }
+.classement-page__source a { color: var(--rouge); }
+.classement-page__actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+@media (max-width: 700px) {
+	table.cl .cl__secondaire { display: none; }
+	table.cl td { padding: 11px 6px; font-size: 15px; }
+	table.cl td:first-child { width: 40px; padding-left: 8px; }
+	.cl__rang span { width: 28px; height: 28px; font-size: 15px; }
+	.cl__equipe img { width: 28px; height: 28px; margin-right: 8px; }
+	.cl__nom { font-size: 15px; }
+	.cl__penalite { display: none; }
+	table.cl td.cl__points { font-size: 21px; }
+	.hvb-rang { padding: 22px 18px; justify-content: center; text-align: center; }
+	.hvb-rang__chiffres div { min-width: 0; flex: 1; padding: 10px 6px; }
+	.hvb-rang__chiffres { width: 100%; }
+}
+.cl__club { display: flex; align-items: center; gap: 14px; }
+table.cl .cl__club img { display: block; flex: none; margin: 0; }
+table.cl .cl__penalite { margin-left: 0; }
+table.cl--compact .cl__club { gap: 10px; }
+.blason--club { object-fit: contain; background: var(--blanc); border-radius: 50%; padding: 6px; }
