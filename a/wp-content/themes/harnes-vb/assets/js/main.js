@@ -263,3 +263,21 @@ document.querySelectorAll('[data-boutique]').forEach((bouton) => {
 	}), { threshold: 0.4 });
 	cibles.forEach((c) => obs.observe(c));
 })();
+
+// Boutons « Copier » : copient une adresse e-mail (utile sans application de messagerie configurée).
+document.querySelectorAll('[data-copier]').forEach((bouton) => {
+	bouton.addEventListener('click', async () => {
+		try {
+			await navigator.clipboard.writeText(bouton.dataset.copier);
+		} catch (e) {
+			const champ = Object.assign(document.createElement('textarea'), { value: bouton.dataset.copier });
+			document.body.append(champ);
+			champ.select();
+			document.execCommand('copy');
+			champ.remove();
+		}
+		bouton.textContent = 'Copié !';
+		bouton.classList.add('est-copie');
+		setTimeout(() => { bouton.textContent = 'Copier'; bouton.classList.remove('est-copie'); }, 2000);
+	});
+});

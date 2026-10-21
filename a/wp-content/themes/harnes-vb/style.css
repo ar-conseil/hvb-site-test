@@ -1662,3 +1662,8 @@ table.cl .cl__club img { display: block; flex: none; margin: 0; }
 table.cl .cl__penalite { margin-left: 0; }
 table.cl--compact .cl__club { gap: 10px; }
 .blason--club { object-fit: contain; background: var(--blanc); border-radius: 50%; padding: 6px; }
+.feminine-appel__actions { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.feminine-appel p.feminine-appel__adresse { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0; font-size: 15px; }
+.feminine-appel__adresse strong { user-select: all; }
+.copier { padding: 6px 12px; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; background: transparent; color: var(--blanc); font: 700 12px/1 var(--titre); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s; }
+.copier:hover, .copier.est-copie { background: var(--blanc); color: var(--rose-fonce); }
