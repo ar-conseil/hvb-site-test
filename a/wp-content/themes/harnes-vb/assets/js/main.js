@@ -72,6 +72,28 @@ document.querySelectorAll('[data-boutique]').forEach((bouton) => {
 	});
 });
 
+// Boutique Billetweb : le cadre prend la hauteur de son contenu (envoyée par Billetweb à chaque étape),
+// pour qu'il n'y ait qu'un seul défilement, celui de la page, pendant la réservation.
+(() => {
+	const cadre = document.getElementById('boutique');
+	if (!cadre) return;
+	const boite = cadre.parentElement;
+	addEventListener('message', (e) => {
+		if (e.origin !== 'https://www.billetweb.fr' || typeof e.data !== 'string') return;
+		const hauteur = e.data.match(/_(\d+)_https?:/);
+		if (hauteur) {
+			const h = Math.max(480, Number(hauteur[1]));
+			if (Math.abs(cadre.offsetHeight - h) > 4) cadre.style.height = `${h}px`;
+		} else if (e.data.startsWith('orderstate_')) {
+			// Nouvelle étape : on revient en haut de la boutique si elle est sortie de l'écran.
+			const haut = boite.getBoundingClientRect().top;
+			if (haut < 0) scrollTo({ top: scrollY + haut - 100, behavior: 'smooth' });
+		} else if (e.data.startsWith('fullscreen_')) {
+			boite.classList.toggle('billetterie__boutique--plein-ecran', e.data.startsWith('fullscreen_on'));
+		}
+	});
+})();
+
 // Visionneuse : les photos des galeries s'ouvrent en grand, avec navigation.
 (() => {
 	const liens = [...document.querySelectorAll('.wp-block-gallery a[href], .contenu .wp-block-image > a[href]')]
@@ -189,7 +211,7 @@ document.querySelectorAll('[data-boutique]').forEach((bouton) => {
 		'.raison', '.pack', '.partenaire', '.tarifs', '.options__sur-mesure', '.mur-logos__logo', '.contact', '.hvb-chiffres .chiffre',
 		'.hvb-salle', '.hvb-card', '.joueur', '.carte-actu', '.label', '.couleur', '.pastille-chiffre', '.suivez__lien',
 		'.ligne-match', '.titre-section', '.section-entete', '.carte', '.devise__texte > *', '.mosaique__photo',
-		'.wp-block-gallery .wp-block-image', '.hvb-epoque', '.frise', '.billet', '.billetterie__boutique',
+		'.wp-block-gallery .wp-block-image', '.hvb-epoque', '.frise', '.billet', '.atout', '.info-pratique',
 	].join(',');
 	const elements = [...document.querySelectorAll(selecteurs)].filter((el) => !el.closest('.entete, .pied, .visionneuse, .carrousel'));
 	const parents = new Map();
