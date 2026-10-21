@@ -1520,3 +1520,76 @@ body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-blo
 body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li:hover { background: none; transform: none; box-shadow: none; }
 body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li strong { color: var(--noir); }
 body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li a { color: var(--rouge); }
+
+/* ===== Section féminine : la couleur rose de ses tenues ===== */
+:root { --rose: #ff2d8a; --rose-fonce: #c4126a; }
+.bouton--rose { background: var(--rose); color: var(--blanc); }
+.bouton--rose:hover { background: var(--rose-fonce); }
+.feminine .surtitre, .feminine .titre-section em { color: var(--rose); }
+.feminine-ouverture { position: relative; display: flex; align-items: flex-end; min-height: clamp(520px, 74vh, 760px); overflow: hidden; color: var(--blanc); }
+.feminine-ouverture__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; animation: kenburns 18s ease-out both; }
+.feminine-ouverture::before { content: ''; position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(14,14,15,.15) 30%, rgba(14,14,15,.92)), linear-gradient(90deg, rgba(196,18,106,.45), transparent 60%); }
+.feminine-ouverture::after { content: ''; position: absolute; z-index: 2; left: 0; bottom: 0; width: 34%; height: 6px; background: var(--rose); }
+.feminine-ouverture__texte { position: relative; z-index: 2; padding-block: 60px clamp(56px, 7vw, 90px); text-align: center; }
+.feminine-ouverture .ariane span { color: var(--rose); }
+.feminine-ouverture__titre { font: italic 800 clamp(52px, 8vw, 110px)/.92 var(--titre); text-transform: uppercase; margin: 0 0 16px; animation: fondu .8s .2s both; }
+.feminine-ouverture__titre em { color: var(--rose); }
+.feminine-ouverture__intro { font-size: clamp(18px, 1.8vw, 22px); color: #ecebef; max-width: 640px; margin: 0 auto 28px; animation: fondu .8s .3s both; }
+.feminine-ouverture__actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; animation: fondu .8s .4s both; }
+.feminine-ouverture__actions .bouton { padding: 15px 26px; }
+
+.feminine-intro { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.feminine-intro__texte p:not(.surtitre) { font-size: 18px; color: #3e3e44; }
+.feminine-intro__photo { position: relative; margin: 0; }
+.feminine-intro__photo::before { content: ''; position: absolute; inset: 18px -18px -18px 18px; border: 4px solid var(--rose); border-radius: 18px; }
+.feminine-intro__photo img { position: relative; display: block; width: 100%; border-radius: 16px; box-shadow: 0 30px 60px rgba(0,0,0,.18); }
+
+.feminine-atouts { background: var(--gris-clair); }
+.atout--rose { background: var(--blanc); color: #55555c; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+.atout--rose h3 { color: var(--noir); }
+.atout--rose .atout__icone { background: var(--rose); }
+.atout--rose::before { border-color: var(--rose); }
+
+.feminine-photos { display: grid; grid-template-columns: 1.2fr 1fr 1fr; background: var(--noir); }
+.feminine-photos figure { margin: 0; aspect-ratio: 1; overflow: hidden; }
+.feminine-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s cubic-bezier(.2,.7,.2,1); }
+.feminine-photos figure:hover img { transform: scale(1.05); }
+
+.feminine-appel { position: relative; overflow: hidden; background: linear-gradient(110deg, var(--rose-fonce), var(--rose)); color: var(--blanc); padding-block: clamp(48px, 6vw, 80px); }
+.feminine-appel::before { content: ''; position: absolute; right: -6%; top: -40%; width: 46%; height: 180%; background: rgba(0,0,0,.12); transform: skewX(-18deg); }
+.feminine-appel__grille { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 24px 48px; flex-wrap: wrap; }
+.feminine-appel .surtitre { color: var(--blanc); opacity: .85; }
+.feminine-appel__titre { margin: 0 0 8px; font: italic 800 clamp(36px, 5vw, 60px)/1 var(--titre); text-transform: uppercase; }
+.feminine-appel__titre em { color: var(--noir); }
+.feminine-appel p:last-child { margin: 0; font-size: 18px; }
+.feminine-appel .bouton { padding: 16px 28px; }
+.feminine-appel .bouton:hover { background: var(--noir); color: var(--blanc); }
+.page-section-feminine .appel { display: none; }
+.nav .sub-menu li.menu-feminine > a { color: var(--rose); }
+@media (max-width: 860px) {
+	.feminine-intro { grid-template-columns: 1fr; text-align: center; }
+	.feminine-intro__photo::before { inset: 12px -10px -12px 10px; }
+	.feminine-photos { grid-template-columns: 1fr 1fr; }
+	.feminine-photos figure:first-child { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
+	.feminine-appel__grille { justify-content: center; text-align: center; }
+}
+/* Ouverture en deux parties : texte sur fond sombre, photo entière à droite (pas de texte sur les visages). */
+.feminine-ouverture { display: grid; grid-template-columns: minmax(0, 44fr) minmax(0, 56fr); align-items: stretch; min-height: clamp(520px, 70vh, 700px); background: var(--noir); }
+.feminine-ouverture::before { display: none; }
+.feminine-ouverture__visuel { position: relative; order: 2; overflow: hidden; }
+.feminine-ouverture__visuel::before { content: ''; position: absolute; z-index: 1; inset: 0 auto 0 0; width: 24%; background: linear-gradient(90deg, var(--noir), transparent); }
+.feminine-ouverture__photo { object-position: center 40%; }
+.feminine-ouverture__texte { order: 1; display: flex; flex-direction: column; justify-content: center; padding: 56px clamp(28px, 5vw, 80px); text-align: left; background: radial-gradient(circle at 0% 100%, rgba(255,45,138,.28), transparent 55%), var(--noir); }
+.feminine-ouverture__intro { margin-inline: 0; }
+.feminine-ouverture__actions { justify-content: flex-start; }
+@media (max-width: 860px) {
+	.feminine-ouverture { grid-template-columns: 1fr; grid-template-rows: 82vw auto; min-height: 0; }
+	.feminine-ouverture__visuel { order: 0; }
+	.feminine-ouverture__visuel::before { inset: auto 0 0 0; width: auto; height: 35%; background: linear-gradient(0deg, var(--noir), transparent); }
+	.feminine-ouverture__texte { padding: 26px 20px 48px; text-align: center; align-items: center; }
+	.feminine-ouverture__intro { margin-inline: auto; }
+	.feminine-ouverture__actions { justify-content: center; }
+}
+.feminine-photos figure { aspect-ratio: auto; height: clamp(260px, 30vw, 440px); }
+@media (max-width: 860px) { .feminine-photos figure { height: 46vw; } .feminine-photos figure:first-child { aspect-ratio: auto; height: 72vw; } }
+.visuellement-cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
