@@ -281,3 +281,54 @@ document.querySelectorAll('[data-copier]').forEach((bouton) => {
 		setTimeout(() => { bouton.textContent = 'Copier'; bouton.classList.remove('est-copie'); }, 2000);
 	});
 });
+
+// Liens e-mail : si aucune application de messagerie ne s'ouvre (fréquent sur ordinateur avec Gmail
+// dans le navigateur), une fenêtre propose d'écrire depuis Gmail ou Outlook, avec destinataire,
+// objet et message déjà remplis.
+(() => {
+	const fenetre = document.createElement('dialog');
+	fenetre.className = 'choix-mail';
+	fenetre.innerHTML = `
+		<p class="choix-mail__titre">Envoyer le message avec…</p>
+		<p class="choix-mail__texte">Le destinataire et le message sont déjà remplis : il ne reste qu'à envoyer.</p>
+		<div class="choix-mail__boutons">
+			<a class="bouton bouton--rouge" data-service="gmail" target="_blank" rel="noopener">Gmail</a>
+			<a class="bouton bouton--noir" data-service="outlook" target="_blank" rel="noopener">Outlook</a>
+			<button type="button" class="bouton choix-mail__copier" data-service="copier">Copier le message</button>
+		</div>
+		<button type="button" class="choix-mail__fermer" aria-label="Fermer">×</button>`;
+	document.body.append(fenetre);
+	fenetre.querySelector('.choix-mail__fermer').addEventListener('click', () => fenetre.close());
+	fenetre.addEventListener('click', (e) => { if (e.target === fenetre) fenetre.close(); });
+
+	const ouvrir = (lien) => {
+		const url = new URL(lien.href);
+		const a = decodeURIComponent(url.pathname);
+		const objet = url.searchParams.get('subject') || '';
+		const corps = url.searchParams.get('body') || '';
+		const enc = encodeURIComponent;
+		fenetre.querySelector('[data-service="gmail"]').href = `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(a)}&su=${enc(objet)}&body=${enc(corps)}`;
+		fenetre.querySelector('[data-service="outlook"]').href = `https://outlook.live.com/mail/0/deeplink/compose?to=${enc(a)}&subject=${enc(objet)}&body=${enc(corps)}`;
+		const copier = fenetre.querySelector('[data-service="copier"]');
+		copier.textContent = 'Copier le message';
+		copier.onclick = async () => {
+			try { await navigator.clipboard.writeText(`À : ${a}\nObjet : ${objet}\n\n${corps}`); copier.textContent = 'Message copié !'; } catch (err) { copier.textContent = a; }
+		};
+		fenetre.showModal();
+	};
+
+	document.querySelectorAll('a[href^="mailto:"]').forEach((lien) => {
+		lien.addEventListener('click', () => {
+			// Si une messagerie s'ouvre, la page perd le focus : on ne propose rien de plus.
+			let quittee = false;
+			const surQuitte = () => { quittee = true; };
+			window.addEventListener('blur', surQuitte, { once: true });
+			document.addEventListener('visibilitychange', surQuitte, { once: true });
+			setTimeout(() => {
+				window.removeEventListener('blur', surQuitte);
+				document.removeEventListener('visibilitychange', surQuitte);
+				if (!quittee && document.hasFocus()) ouvrir(lien);
+			}, 900);
+		});
+	});
+})();

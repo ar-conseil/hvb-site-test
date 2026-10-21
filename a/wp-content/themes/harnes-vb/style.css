@@ -1667,3 +1667,15 @@ table.cl--compact .cl__club { gap: 10px; }
 .feminine-appel__adresse strong { user-select: all; }
 .copier { padding: 6px 12px; border: 1px solid rgba(255,255,255,.7); border-radius: 999px; background: transparent; color: var(--blanc); font: 700 12px/1 var(--titre); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s; }
 .copier:hover, .copier.est-copie { background: var(--blanc); color: var(--rose-fonce); }
+
+/* Choix de la messagerie (quand aucune application d'e-mail ne s'ouvre) */
+.choix-mail { position: fixed; width: min(440px, calc(100% - 32px)); padding: 32px 28px 26px; border: 0; border-top: 5px solid var(--rouge); border-radius: 16px; background: var(--blanc); color: var(--texte); text-align: center; box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+.choix-mail::backdrop { background: rgba(14,14,15,.65); backdrop-filter: blur(3px); }
+.choix-mail__titre { margin: 0 0 8px; font: italic 800 28px/1 var(--titre); text-transform: uppercase; color: var(--noir); }
+.choix-mail__texte { margin: 0 0 22px; color: #55555c; font-size: 16px; }
+.choix-mail__boutons { display: grid; gap: 10px; }
+.choix-mail__boutons .bouton { width: 100%; padding: 15px 20px; }
+.choix-mail__copier { background: var(--gris-clair); color: var(--noir); border: 0; cursor: pointer; }
+.choix-mail__copier:hover { background: var(--ligne); }
+.choix-mail__fermer { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: transparent; font-size: 26px; line-height: 1; color: var(--gris); cursor: pointer; }
+.choix-mail__fermer:hover { background: var(--gris-clair); color: var(--noir); }
