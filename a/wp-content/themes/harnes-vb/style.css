@@ -1279,3 +1279,18 @@ a.store:hover { transform: translateY(-2px); background: var(--rouge); color: va
 /* Sections : texte centré sous le titre centré (à côté d'une photo, il reste aligné à gauche sur grand écran). */
 .bloc__corps > p, .bloc__corps > h3, .bloc__corps > h4 { text-align: center; }
 @media (max-width: 860px) { .bloc__texte { text-align: center; } }
+/* Cases courtes : texte façon titre (condensé, majuscules), 4 par ligne quand il y en a 4 ou 8. */
+.bloc .wp-block-list.liste-courte li { min-height: 76px; font: 700 19px/1.2 var(--titre); letter-spacing: .04em; text-transform: uppercase; }
+@media (min-width: 861px) {
+	.bloc .wp-block-list.liste-courte:has(> li:nth-child(4):last-child) li,
+	.bloc .wp-block-list.liste-courte:has(> li:nth-child(8):last-child) li { flex-basis: calc((100% - 48px) / 4); }
+}
+@media (max-width: 560px) { .bloc .wp-block-list.liste-courte li { flex-basis: calc((100% - 16px) / 2); min-height: 70px; padding: 14px 12px; font-size: 16px; } }
+/* Grilles sans case orpheline : 6 majeurs = 2 × 3 (logos plus grands), 10 Business Club = 2 × 5. */
+.partenaires-grille--partenaires-majeurs { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 900px; margin-inline: auto; }
+.partenaires-grille--partenaires-majeurs .partenaire__logo { height: 110px; }
+.contenu .partenaires-grille--partenaires-majeurs .partenaire__logo img { max-width: 200px; max-height: 96px; }
+.partenaires-grille--business-club-hvb { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 700px) {
+	.partenaires-grille--partenaires-majeurs, .partenaires-grille--business-club-hvb { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
