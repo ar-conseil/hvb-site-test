@@ -1074,11 +1074,11 @@ button { font: inherit; cursor: pointer; }
 .bloc ol.wp-block-list:not(.hvb-card ol) li:hover { background: none; transform: none; box-shadow: none; }
 
 /* Menu : l'équipe première (Volstar M2) en rouge */
-/* Volstar M2 et Partenaires : mis en avant en rouge et en plus gros. */
-.nav__liste > li.menu-vedette > a { color: #ff4d4d; font-size: 19px; }
-.nav__liste > li.menu-vedette > a:hover, .nav__liste > li.menu-vedette.current-menu-ancestor > a, .nav__liste > li.menu-vedette.current-menu-item > a { color: #ff7070; }
-@media (max-width: 1640px) { .nav__liste > li.menu-vedette > a { font-size: 18px; } }
-@media (max-width: 1100px) { .nav__liste > li.menu-vedette > a { font-size: 26px; } }
+/* Volstar M2 et Partenaires : en rouge, même taille que les autres, et qui grossissent au survol. */
+.nav__liste > li.menu-vedette > a { color: #ff4d4d; transition: transform .3s cubic-bezier(.34,1.56,.64,1), color .2s, text-shadow .3s; }
+.nav__liste > li.menu-vedette:hover > a { color: #ff6b6b; transform: scale(1.15); text-shadow: 0 0 18px rgba(255,77,77,.45); }
+.nav__liste > li.menu-vedette.current-menu-ancestor > a, .nav__liste > li.menu-vedette.current-menu-item > a { color: #ff6b6b; }
+@media (max-width: 1100px) { .nav__liste > li.menu-vedette:hover > a { transform: none; text-shadow: none; } }
 
 .billetterie__pied { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 14px; }
 .billetterie__pied .billetterie__note { margin: 0; }
@@ -1402,6 +1402,21 @@ a.store:hover { transform: translateY(-2px); background: var(--rouge); color: va
 }
 @media (max-width: 1240px) and (min-width: 1101px) {
 	.nav__liste > li > a { padding-inline: 5px; font-size: 14px; letter-spacing: .05em; }
-	.nav__liste > li.menu-vedette > a { font-size: 16px; }
 	.entete__nom { display: none; }
 }
+
+/* Boutique : collection supporters (goodies) */
+.goodies-section { background: var(--gris-clair); }
+.goodies { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.goodie { background: var(--blanc); border-radius: 16px; overflow: hidden; text-align: center; padding-bottom: 22px; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+.goodie:hover { transform: translateY(-6px); box-shadow: 0 22px 46px rgba(14,14,15,.12); }
+.goodie__photo { aspect-ratio: 1; overflow: hidden; }
+.goodie__photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.goodie:hover .goodie__photo img { transform: scale(1.07) rotate(-1.5deg); }
+.goodie__nom { position: relative; margin: 14px 0 6px; padding-top: 14px; font: italic 800 24px/1 var(--titre); text-transform: uppercase; }
+.goodie__nom::before { content: ''; position: absolute; top: 0; left: 50%; width: 34px; height: 3px; background: var(--rouge); transform: translateX(-50%); transition: width .35s; }
+.goodie:hover .goodie__nom::before { width: 70px; }
+.goodie p { margin: 0; padding-inline: 14px; color: #55555c; font-size: 15px; }
+.goodies__note { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 30px 0 0; color: #55555c; font: 600 15px/1.3 var(--titre); letter-spacing: .08em; text-transform: uppercase; text-align: center; }
+.goodies__note .icone { color: var(--rouge); }
+@media (max-width: 760px) { .goodies { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .goodie__nom { font-size: 20px; } .goodie p { font-size: 14px; } }
