@@ -211,7 +211,7 @@ document.querySelectorAll('[data-boutique]').forEach((bouton) => {
 		'.raison', '.pack', '.partenaire', '.tarifs', '.options__sur-mesure', '.mur-logos__logo', '.contact', '.hvb-chiffres .chiffre',
 		'.hvb-salle', '.hvb-card', '.joueur', '.carte-actu', '.label', '.couleur', '.pastille-chiffre', '.suivez__lien',
 		'.ligne-match', '.titre-section', '.section-entete', '.carte', '.devise__texte > *', '.mosaique__photo',
-		'.wp-block-gallery .wp-block-image', '.hvb-epoque', '.frise', '.billet', '.atout', '.info-pratique',
+		'.wp-block-gallery .wp-block-image', '.hvb-epoque', '.frise', '.billet', '.atout', '.info-pratique', '.produit', '.stand__match', '.action-cle',
 	].join(',');
 	const elements = [...document.querySelectorAll(selecteurs)].filter((el) => !el.closest('.entete, .pied, .visionneuse, .carrousel'));
 	const parents = new Map();
