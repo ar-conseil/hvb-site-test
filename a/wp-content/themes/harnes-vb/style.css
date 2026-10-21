@@ -1679,3 +1679,24 @@ table.cl--compact .cl__club { gap: 10px; }
 .choix-mail__copier:hover { background: var(--ligne); }
 .choix-mail__fermer { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: transparent; font-size: 26px; line-height: 1; color: var(--gris); cursor: pointer; }
 .choix-mail__fermer:hover { background: var(--gris-clair); color: var(--noir); }
+
+/* ===== Accueil : défilé des joueurs en filigrane (noir et blanc, en boucle) ===== */
+.ouverture { overflow: hidden; isolation: isolate; }
+.ouverture__defile { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.ouverture__piste { position: absolute; left: 0; bottom: 0; height: 88%; display: flex; align-items: flex-end; width: max-content; animation: defile-joueurs 90s linear infinite; will-change: transform; }
+.ouverture__piste img { height: 100%; width: auto; margin-right: 3vw; opacity: .2; filter: contrast(1.1); }
+@keyframes defile-joueurs { to { transform: translate3d(-50%, 0, 0); } }
+/* Voile : le titre reste parfaitement lisible, les joueurs apparaissent sur les côtés et dans le bas. */
+.ouverture__defile::after { content: ''; position: absolute; inset: 0; background:
+	radial-gradient(ellipse 46% 52% at 50% 46%, rgba(14,14,15,.82) 0%, rgba(14,14,15,.45) 55%, rgba(14,14,15,0) 100%),
+	linear-gradient(180deg, var(--noir) 0%, rgba(14,14,15,0) 22%, rgba(14,14,15,0) 80%, var(--noir) 100%); }
+/* Lueur rouge qui balaie lentement le fond. */
+.ouverture::before { content: ''; position: absolute; z-index: 0; width: 60vmax; height: 60vmax; left: -30vmax; top: 10%; border-radius: 50%; background: radial-gradient(circle, rgba(208,24,24,.22), transparent 60%); animation: lueur 16s ease-in-out infinite alternate; pointer-events: none; }
+@keyframes lueur { to { transform: translate3d(110vw, -10%, 0); } }
+.ouverture__texte, .ouverture__suite { position: relative; z-index: 1; }
+.ouverture__suite { position: absolute; }
+@media (max-width: 760px) {
+	.ouverture__piste { height: 70%; animation-duration: 70s; }
+	.ouverture__piste img { opacity: .22; margin-right: 6vw; }
+}
+@media (prefers-reduced-motion: reduce) { .ouverture__piste, .ouverture::before { animation: none; } }
