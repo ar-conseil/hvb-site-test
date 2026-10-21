@@ -1394,11 +1394,10 @@ a.store:hover { transform: translateY(-2px); background: var(--rouge); color: va
 	.portes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 	.portes__titre { font-size: 30px; }
 }
-/* En-tête sur écrans moyens : menu resserré, Billetterie et Boutique en icônes, pour que tout tienne. */
+/* En-tête sur écrans moyens : menu resserré et Boutique en icône, pour que tout tienne avec le mot Billetterie. */
 @media (max-width: 1440px) and (min-width: 1101px) {
 	.nav__liste > li > a { padding-inline: 7px; letter-spacing: .07em; }
-	.entete__billetterie { width: 44px; height: 44px; padding: 0; }
-	.entete__billetterie span { display: none; }
+	.entete__billetterie { padding-inline: 14px; }
 }
 @media (max-width: 1240px) and (min-width: 1101px) {
 	.nav__liste > li > a { padding-inline: 5px; font-size: 14px; letter-spacing: .05em; }
