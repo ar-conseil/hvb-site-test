@@ -1774,3 +1774,4 @@ table.cl th, .classement-page__source { color: #5f5f67; }
 @media (max-width: 760px) { .ligne-match { grid-template-columns: 1fr; } }
 .mur-logos__logo { display: flex; align-items: center; justify-content: center; }
 .mur-logos__logo img { max-height: 74px; }
+.feminine .section .surtitre { color: #c4126a; }
