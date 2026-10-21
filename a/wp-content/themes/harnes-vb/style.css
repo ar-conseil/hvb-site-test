@@ -1454,3 +1454,69 @@ a.store:hover { transform: translateY(-2px); background: var(--rouge); color: va
 	.carrousel__extrait { font-size: 15px; }
 	.carrousel__points { left: 20px; bottom: 26px; }
 }
+
+/* Listes de texte long (pages légales, consignes) : liste classique à puces rouges, pas de cases. */
+.bloc .wp-block-list.liste-texte { display: grid; gap: 12px; max-width: 820px; margin-inline: auto; }
+.bloc .wp-block-list.liste-texte li { display: block; position: relative; min-height: 0; padding: 0 0 0 26px; background: none; color: #3e3e44; border-radius: 0; text-align: left; font-weight: 400; line-height: 1.6; }
+.bloc .wp-block-list.liste-texte li::before { content: ''; position: absolute; left: 4px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--rouge); }
+.bloc .wp-block-list.liste-texte li:hover { background: none; transform: none; box-shadow: none; }
+.bloc .wp-block-list.liste-texte li strong { color: var(--noir); }
+.bloc .wp-block-list.liste-texte li a { color: var(--rouge); }
+
+/* Contact : cartes cliquables (itinéraire, appel, e-mail). */
+.contact-cartes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 8px; }
+.contact-carte { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 32px 22px 26px; background: var(--blanc); border-top: 4px solid var(--rouge); border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.05); color: var(--texte); text-align: center; text-decoration: none; transition: background .3s, color .3s, transform .3s, box-shadow .3s; }
+.contact-carte__icone { display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 6px; border-radius: 50%; background: var(--rouge); color: var(--blanc); transition: background .3s, color .3s; }
+.contact-carte__icone .icone { width: 26px; height: 26px; }
+.contact-carte__libelle { color: var(--rouge); font: 700 14px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; }
+.contact-carte__valeur { font: 800 24px/1.15 var(--titre); color: var(--noir); overflow-wrap: anywhere; }
+.contact-carte__detail { color: #6a6a72; font-size: 15px; }
+.contact-carte__action { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font: 700 14px/1 var(--titre); letter-spacing: .1em; text-transform: uppercase; color: var(--rouge); }
+.contact-carte:hover { background: var(--noir); transform: translateY(-4px); box-shadow: 0 18px 40px rgba(14,14,15,.18); }
+.contact-carte:hover .contact-carte__valeur, .contact-carte:hover .contact-carte__action { color: var(--blanc); }
+.contact-carte:hover .contact-carte__detail { color: #b9b9c0; }
+.contact-carte:hover .contact-carte__icone { background: var(--blanc); color: var(--rouge); }
+@media (max-width: 860px) { .contact-cartes { grid-template-columns: 1fr; } }
+.contact-carte[href^="mailto"] .contact-carte__valeur { font-size: 20px; white-space: nowrap; overflow-wrap: normal; }
+
+/* Inscription : tarifs en cartes, documents à télécharger */
+.bloc__corps:has(.tarifs-groupe, .documents) { max-width: 1080px; }
+.tarifs-groupe + .tarifs-groupe { margin-top: 30px; }
+.tarifs-groupe__titre { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 0 0 16px; color: var(--rouge); font: 700 15px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; text-align: center; }
+.tarifs-groupe__titre::before, .tarifs-groupe__titre::after { content: ''; flex: 0 1 60px; height: 2px; background: var(--ligne); }
+.tarifs-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; }
+.tarifs-grille--deux { grid-template-columns: repeat(2, minmax(0, 240px)); justify-content: center; }
+.tarif { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 22px 14px 20px; background: var(--blanc); border-radius: 14px; border-top: 4px solid var(--rouge); box-shadow: 0 2px 12px rgba(0,0,0,.05); text-align: center; transition: background .3s, transform .3s; }
+.tarif:hover { background: var(--noir); transform: translateY(-4px); }
+.tarif__categorie { font: italic 800 26px/1 var(--titre); text-transform: uppercase; color: var(--noir); transition: color .3s; }
+.tarif__annees { color: #6a6a72; font: 600 14px/1.3 var(--titre); letter-spacing: .06em; transition: color .3s; }
+.tarif__prix { margin-top: 8px; color: var(--rouge); font: 800 34px/1 var(--titre); }
+.tarif:hover .tarif__categorie { color: var(--blanc); }
+.tarif:hover .tarif__annees { color: #b9b9c0; }
+
+.documents { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.document { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: var(--blanc); border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.05); color: var(--texte); text-decoration: none; text-align: left; transition: background .3s, transform .3s, box-shadow .3s; }
+.document--principal { grid-column: 1 / -1; background: var(--rouge); color: var(--blanc); }
+.document__icone { display: grid; place-items: center; flex: none; width: 48px; height: 48px; border-radius: 12px; background: var(--gris-clair); color: var(--rouge); }
+.document--principal .document__icone { background: rgba(255,255,255,.18); color: var(--blanc); }
+.document__icone svg, .document__action svg { width: 24px; height: 24px; fill: currentColor; }
+.document__texte { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.document__texte strong { font: 800 20px/1.1 var(--titre); text-transform: uppercase; }
+.document__texte span { font-size: 15px; color: #6a6a72; }
+.document--principal .document__texte span { color: rgba(255,255,255,.85); }
+.document__action { display: inline-flex; align-items: center; gap: 4px; flex: none; padding: 8px 12px; border-radius: 999px; background: var(--gris-clair); color: var(--noir); font: 700 13px/1 var(--titre); letter-spacing: .1em; }
+.document--principal .document__action { background: var(--blanc); color: var(--rouge); }
+.document:hover { background: var(--noir); color: var(--blanc); transform: translateY(-3px); box-shadow: 0 16px 34px rgba(14,14,15,.16); }
+.document:hover .document__texte span { color: #b9b9c0; }
+.document:hover .document__icone { background: var(--rouge); color: var(--blanc); }
+@media (max-width: 760px) { .documents { grid-template-columns: 1fr; } .tarifs-grille { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tarifs-grille--deux { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tarifs-grille, .tarifs-grille--deux { display: flex; flex-wrap: wrap; justify-content: center; }
+.tarif { flex: 0 1 190px; }
+@media (max-width: 760px) { .tarif { flex-basis: calc((100% - 14px) / 2); } }
+/* Pages légales : toutes les listes en texte simple. */
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) { display: grid; gap: 12px; max-width: 820px; margin-inline: auto; }
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li { display: block; position: relative; flex: none; min-height: 0; padding: 0 0 0 26px; background: none; color: #3e3e44; border-radius: 0; text-align: left; font: 400 17px/1.6 var(--corps); letter-spacing: 0; text-transform: none; }
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li::before { content: ''; position: absolute; left: 4px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--rouge); }
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li:hover { background: none; transform: none; box-shadow: none; }
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li strong { color: var(--noir); }
+body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc .wp-block-list:not(.hvb-card ul) li a { color: var(--rouge); }
