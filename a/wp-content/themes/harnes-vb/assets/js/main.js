@@ -69,6 +69,10 @@ document.querySelectorAll('[data-boutique]').forEach((bouton) => {
 		document.getElementById('boutique').src = bouton.dataset.boutique;
 		document.getElementById('boutique-lien').href = bouton.dataset.lien;
 		document.querySelectorAll('[data-boutique]').forEach((b) => b.setAttribute('aria-pressed', b === bouton));
+		// Sur téléphone, la boutique est sous la liste : on y descend directement.
+		if (window.matchMedia('(max-width: 900px)').matches) {
+			document.getElementById('boutique-zone').scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
 	});
 });
 
@@ -292,8 +296,8 @@ document.querySelectorAll('[data-copier]').forEach((bouton) => {
 		<p class="choix-mail__titre">Envoyer le message avec…</p>
 		<p class="choix-mail__texte">Le destinataire et le message sont déjà remplis : il ne reste qu'à envoyer.</p>
 		<div class="choix-mail__boutons">
-			<a class="bouton bouton--rouge" data-service="gmail" target="_blank" rel="noopener">Gmail</a>
-			<a class="bouton bouton--noir" data-service="outlook" target="_blank" rel="noopener">Outlook</a>
+			<a class="bouton bouton--rouge" href="https://mail.google.com/" data-service="gmail" target="_blank" rel="noopener">Gmail</a>
+			<a class="bouton bouton--noir" href="https://outlook.live.com/" data-service="outlook" target="_blank" rel="noopener">Outlook</a>
 			<button type="button" class="bouton choix-mail__copier" data-service="copier">Copier le message</button>
 		</div>
 		<button type="button" class="choix-mail__fermer" aria-label="Fermer">×</button>`;

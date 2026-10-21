@@ -14,7 +14,7 @@ Text Domain: harnes-vb
 	--rouge-fonce: #8f0000;
 	--blanc: #ffffff;
 	--gris-clair: #f3f3f5;
-	--gris: #8a8a92;
+	--gris: #6b6b73;
 	--texte: #1c1c1f;
 	--ligne: #e3e3e8;
 	--titre: 'Barlow Condensed', 'Arial Narrow', sans-serif;
@@ -1700,3 +1700,77 @@ table.cl--compact .cl__club { gap: 10px; }
 	.ouverture__piste img { opacity: .22; margin-right: 6vw; }
 }
 @media (prefers-reduced-motion: reduce) { .ouverture__piste, .ouverture::before { animation: none; } }
+
+/* ===== Corrections de l'audit (mobile) ===== */
+/* Logos partenaires : jamais plus larges que leur carte (grille à 2 colonnes sur téléphone). */
+.contenu .partenaire__logo img, .contenu .partenaires-grille--partenaires-majeurs .partenaire__logo img { max-width: 100%; }
+/* Contraste suffisant (accessibilité) : rouge éclairci pour les petits textes sur fond noir. */
+.pied__devise strong, .carrousel .surtitre, .commander .surtitre, .stand .surtitre, .bloc--infos .surtitre, .appli .surtitre { color: #ff5c5c; }
+table.cl th, .classement-page__source { color: #5f5f67; }
+/* Cibles tactiles confortables sur téléphone (≥ 40 px). */
+@media (max-width: 760px) {
+	.ariane a { display: inline-block; padding: 10px 4px; margin: -10px -4px; }
+	.pied__liens-legaux a { display: inline-block; padding: 10px 0; }
+	.lien-fleche, .atout__lien, .vitrine__lien { padding-block: 12px; }
+	.partenaire__liens a { width: 40px; height: 40px; }
+	.appli-partenaire__confidentialite { display: inline-block; padding-block: 10px; }
+}
+/* Tableaux de texte (pages légales) : défilement horizontal plutôt que débordement sur téléphone. */
+.contenu .bloc__corps table { display: block; max-width: 100%; overflow-x: auto; }
+.nav__suivez { color: #9a9aa2; }
+/* Contraste des textes roses (section féminine) : rose vif sur fond noir, rose soutenu sur fond clair. */
+.bouton--rose { background: #d81b74; }
+.bouton--rose:hover { background: #b0135f; }
+.feminine .section .surtitre, .feminine .section .titre-section em { color: #d81b74; }
+.feminine-appel { background: linear-gradient(110deg, #a8115a, #d81b74); }
+.feminine-appel .surtitre, .appel .surtitre { opacity: 1; }
+/* Titres de bandeau : espacement normal entre les mots animés. */
+.bandeau__titre { word-spacing: -.14em; }
+/* Pied de page : liens du club sur une seule colonne (plus de retours à la ligne au milieu des libellés). */
+.pied__menu { columns: 1; }
+/* « Comment s'y rendre » : une seule colonne, les paragraphes ne sont plus coupés. */
+.contenu .hvb-moyens { columns: 1; }
+/* Articles : l'image du bandeau (souvent avec du texte : logo, diplôme) est floutée derrière le titre. */
+.single-post .bandeau__fond { filter: blur(8px); transform: scale(1.08); }
+/* Chiffres clés (5) sur téléphone : le dernier occupe toute la ligne au lieu de rester seul à gauche. */
+@media (max-width: 860px) { .hvb-chiffres--5 .chiffre:last-child { grid-column: 1 / -1; } }
+/* Partenaires sans logo : nom présenté comme un logo typographique, sans soulignement. */
+.partenaire__logo:has(.partenaire__sigle) { text-decoration: none; }
+.partenaire__sigle { display: grid; place-items: center; min-height: 64px; padding: 8px 14px; border: 2px solid var(--noir); border-radius: 8px; color: var(--noir); text-decoration: none; }
+/* Dernier bandeau rouge d'une page suivi du bandeau rouge « Venez vous entraîner » : séparation blanche. */
+.contenu--sections > .bloc--accent:last-child { margin-bottom: clamp(40px, 6vw, 72px); }
+/* Score de forfait : affiché en mots, plus petit. */
+.affiche__score--forfait, .ligne-match__score--forfait { font-size: 26px; letter-spacing: .04em; text-transform: uppercase; }
+/* Effectif : joueurs détourés sur un fond aux couleurs du club, tous cadrés de la même façon. */
+.joueur__photo:has(.joueur__detoure) { background: radial-gradient(circle at 50% 30%, #2a2a2e, var(--noir) 75%); }
+.joueur__photo:has(.joueur__detoure)::before { content: ''; position: absolute; inset: auto -20% -30% -20%; height: 60%; background: radial-gradient(ellipse at 50% 100%, rgba(208,24,24,.45), transparent 65%); }
+.joueur__photo .joueur__detoure { position: relative; display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; padding: 14px 10px 0; transform-origin: bottom; }
+.joueur:hover .joueur__photo .joueur__detoure { transform: scale(1.04); }
+/* Une ligne de 2 ou 3 joueurs reste centrée au lieu de laisser un grand vide à droite. */
+.grille-joueurs { display: flex; flex-wrap: wrap; justify-content: center; }
+.grille-joueurs .joueur { flex: 0 1 260px; }
+@media (max-width: 600px) { .grille-joueurs { gap: 12px; } .grille-joueurs .joueur { flex-basis: calc(50% - 6px); } .joueur__nom { font-size: 19px; } }
+/* Billetterie : la boutique reste visible pendant qu'on parcourt la liste des matchs. */
+@media (min-width: 901px) { .billetterie__colonne { position: sticky; top: calc(var(--entete-h) + 20px); } }
+#boutique-zone { scroll-margin-top: calc(var(--entete-h) + 12px); }
+/* Classement : « 12e » et non « 12E ». */
+.hvb-rang__place sup { text-transform: none; }
+/* Départementale 5 : le titre imprimé dans la photo de fond ne doit pas apparaître derrière le vrai titre. */
+.page-departementale-5 .bandeau__fond { filter: blur(8px); transform: scale(1.08); }
+/* Mur de logos (Devenir partenaire) : toutes les cases à la même hauteur. */
+.mur-logos__logo { aspect-ratio: auto; height: 104px; overflow: hidden; }
+.mur-logos__logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+/* Galerie de 3 photos sur téléphone : la première sur toute la largeur, pas de photo orpheline. */
+@media (max-width: 700px) { .contenu .wp-block-gallery.hvb-galerie:has(> .wp-block-image:nth-child(3):last-child) > .wp-block-image:first-child { grid-column: 1 / -1; } }
+/* Cartes de l'appli : le lien « Voir sur le site » toujours aligné en bas. */
+.atout { display: flex; flex-direction: column; }
+.atout__lien { margin-top: auto; padding-top: 14px; align-self: flex-start; }
+/* Boutique : coupe la petite marque sombre en bas de la photo d'ouverture. */
+.vitrine__photo img { clip-path: inset(0 0 2.5% 0); }
+/* Photos en hauteur à côté d'un texte : hauteur limitée pour que le texte ne flotte pas dans le vide. */
+.bloc__media .wp-block-image img { max-height: 560px; object-fit: cover; }
+/* Calendrier : date et heure sur une ligne. */
+.ligne-match { grid-template-columns: 250px 1fr 130px; }
+@media (max-width: 760px) { .ligne-match { grid-template-columns: 1fr; } }
+.mur-logos__logo { display: flex; align-items: center; justify-content: center; }
+.mur-logos__logo img { max-height: 74px; }
