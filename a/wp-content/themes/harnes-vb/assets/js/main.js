@@ -336,3 +336,12 @@ document.querySelectorAll('[data-copier]').forEach((bouton) => {
 		});
 	});
 })();
+
+// Cartes Google Maps : chargées seulement quand le visiteur clique sur « Afficher la carte ».
+document.querySelectorAll('.carte-differee').forEach((bloc) => {
+	bloc.querySelector('.carte-differee__bouton').addEventListener('click', () => {
+		const carte = Object.assign(document.createElement('iframe'), { className: 'hvb-map', src: bloc.dataset.src, title: bloc.dataset.titre });
+		carte.setAttribute('loading', 'lazy');
+		bloc.replaceWith(carte);
+	});
+});
