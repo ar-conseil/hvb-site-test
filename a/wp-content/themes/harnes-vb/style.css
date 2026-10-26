@@ -1,7 +1,7 @@
 /*
 Theme Name: Harnes Volley-Ball
 Description: Thème sur mesure du Harnes Volley-Ball (saison 2026-2027).
-Version: 1.0.0
+Version: 1.0.16
 Requires PHP: 8.0
 Text Domain: harnes-vb
 */
@@ -446,6 +446,7 @@ button { font: inherit; cursor: pointer; }
 .ligne-match--domicile { border-left-color: var(--rouge); }
 .ligne-match__date { font: 600 15px/1.3 var(--titre); text-transform: uppercase; }
 .ligne-match__date span { display: inline-block; background: var(--noir); color: var(--blanc); padding: 2px 6px; border-radius: 2px; margin-right: 6px; font-weight: 700; }
+.ligne-match__date span.est-coupe { background: var(--rouge); }
 .ligne-match__equipes { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; font: 700 18px/1.1 var(--titre); text-transform: uppercase; }
 .ligne-match__equipe { display: flex; align-items: center; gap: 10px; }
 .ligne-match__equipe:first-child { justify-content: flex-end; text-align: right; }
@@ -479,7 +480,11 @@ button { font: inherit; cursor: pointer; }
 .contenu .hvb-direction .hvb-card .wp-block-image img { object-position: top; }
 
 /* Billetterie */
-.billetterie { display: grid; grid-template-columns: 340px 1fr; gap: 32px; align-items: start; }
+.billetterie { display: grid; grid-template-columns: 340px 1fr; grid-template-areas: "liste boutique" "avenir boutique"; grid-template-rows: auto 1fr; gap: 32px; align-items: start; }
+.billetterie__liste { grid-area: liste; }
+.billetterie__colonne { grid-area: boutique; }
+.billetterie__avenir { grid-area: avenir; display: grid; gap: 10px; margin-top: -22px; }
+.billetterie__avenir-titre { margin: 0; font: 700 14px/1.2 var(--titre); letter-spacing: .1em; text-transform: uppercase; color: var(--gris); }
 .billetterie__liste { display: grid; gap: 10px; }
 .billet {
 	display: block; width: 100%; text-align: left;
@@ -497,7 +502,11 @@ button { font: inherit; cursor: pointer; }
 .billetterie__boutique--plein-ecran { position: fixed; inset: 0; z-index: 200; border: 0; border-radius: 0; }
 .billetterie__boutique--plein-ecran iframe { height: 100% !important; }
 .billetterie__note { font-size: 14px; color: var(--gris); margin: 12px 0 0; }
-@media (max-width: 900px) { .billetterie { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+	/* Téléphone : matchs en vente, puis la boutique juste dessous, puis les matchs à venir. */
+	.billetterie { grid-template-columns: 1fr; grid-template-areas: "liste" "boutique" "avenir"; grid-template-rows: auto; gap: 20px; }
+	.billetterie__avenir { margin-top: 12px; }
+}
 
 /* ---------- Galeries : grandes photos, agrandies au clic ---------- */
 .contenu .wp-block-gallery.hvb-galerie { grid-template-columns: repeat(3, 1fr); gap: 12px; }
@@ -1456,12 +1465,12 @@ a.store:hover { transform: translateY(-2px); background: var(--rouge); color: va
 }
 
 /* Listes de texte long (pages légales, consignes) : liste classique à puces rouges, pas de cases. */
-.bloc .wp-block-list.liste-texte { display: grid; gap: 12px; max-width: 820px; margin-inline: auto; }
-.bloc .wp-block-list.liste-texte li { display: block; position: relative; min-height: 0; padding: 0 0 0 26px; background: none; color: #3e3e44; border-radius: 0; text-align: left; font-weight: 400; line-height: 1.6; }
-.bloc .wp-block-list.liste-texte li::before { content: ''; position: absolute; left: 4px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--rouge); }
-.bloc .wp-block-list.liste-texte li:hover { background: none; transform: none; box-shadow: none; }
-.bloc .wp-block-list.liste-texte li strong { color: var(--noir); }
-.bloc .wp-block-list.liste-texte li a { color: var(--rouge); }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) { display: grid; gap: 12px; max-width: 820px; margin-inline: auto; }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) li { display: block; position: relative; min-height: 0; padding: 0 0 0 26px; background: none; color: #3e3e44; border-radius: 0; text-align: left; font-weight: 400; line-height: 1.6; }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) li::before { content: ''; position: absolute; left: 4px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--rouge); }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) li:hover { background: none; transform: none; box-shadow: none; }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) li strong { color: var(--noir); }
+.bloc .wp-block-list.liste-texte:not(.hvb-card ul) li a { color: var(--rouge); }
 
 /* Contact : cartes cliquables (itinéraire, appel, e-mail). */
 .contact-cartes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 8px; }
@@ -1812,3 +1821,331 @@ body:is(.page-confidentialite, .page-politique-de-confidentialite) .bloc__corps 
 .resultat__date { width: 54px; min-width: 0; }
 .resultat__date small { display: block; margin-top: 3px; font-size: 12px; color: var(--texte); }
 .resultats__vide--classement { margin: 0; padding: 26px 20px; border-radius: 12px; background: var(--blanc); text-align: center; }
+
+/* ---------- Billetterie : parcours en deux étapes, boutique visible tout de suite ---------- */
+.page-template-template-billetterie .bandeau,
+.page-template-template-billetterie .bandeau--image { min-height: clamp(220px, 30vh, 340px); padding: 56px 0 60px; }
+.page-template-template-billetterie .bandeau__suite { display: none; }
+.section--billetterie { padding-top: clamp(28px, 4vw, 56px); }
+.billetterie__intro { max-width: 760px; margin: 0 auto 28px; text-align: center; }
+.billetterie__choix { grid-area: liste; }
+.billetterie__etape { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; font: 800 15px/1 var(--titre); letter-spacing: .12em; text-transform: uppercase; color: var(--noir); }
+.billetterie__etape span { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--rouge); color: var(--blanc); font-size: 14px; letter-spacing: 0; }
+.billet { position: relative; padding: 14px 16px 14px 44px; transition: border-color .2s, background .2s, box-shadow .2s; }
+.billet::before { content: ''; position: absolute; left: 16px; top: 50%; width: 16px; height: 16px; margin-top: -8px; border-radius: 50%; border: 2px solid var(--gris); background: var(--blanc); }
+.billet[aria-pressed="true"]::before { border-color: var(--rouge); background: radial-gradient(circle, var(--rouge) 45%, var(--blanc) 50%); }
+.billet strong { font-size: 19px; }
+.billet span { font-size: 13px; }
+.billetterie__boutique { position: relative; }
+.billetterie__chargement { position: absolute; inset: 0; z-index: 1; display: none; align-items: flex-start; justify-content: center; gap: 12px; padding-top: 90px; background: var(--blanc); color: var(--gris); font: 700 15px/1.2 var(--titre); letter-spacing: .06em; text-transform: uppercase; }
+.billetterie__boutique.est-en-chargement .billetterie__chargement { display: flex; }
+.billetterie__roue { width: 22px; height: 22px; border-radius: 50%; border: 3px solid var(--ligne); border-top-color: var(--rouge); animation: roue .8s linear infinite; }
+@keyframes roue { to { transform: rotate(360deg); } }
+.billetterie__boutique iframe { height: 700px; }
+.billetterie__pied .lien-fleche { font-size: 15px; }
+.billetterie__avenir { margin-top: 0; gap: 0; }
+.billetterie__avenir-titre { margin-bottom: 8px; font-size: 13px; }
+.billetterie__avenir ul { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ligne); }
+.billetterie__avenir li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; padding: 10px 2px; border-bottom: 1px solid var(--ligne); }
+.billetterie__avenir li strong { font: 700 16px/1.2 var(--titre); text-transform: uppercase; }
+.billetterie__avenir li span { font: 600 13px/1.4 var(--titre); letter-spacing: .04em; text-transform: uppercase; color: var(--gris); }
+@media (max-width: 900px) {
+	/* Téléphone : petit bandeau, pas d'introduction, les matchs côte à côte, la boutique juste dessous. */
+	.page-template-template-billetterie .bandeau,
+	.page-template-template-billetterie .bandeau--image { min-height: 0; padding: 34px 0 38px; }
+	.page-template-template-billetterie .bandeau__titre { font-size: 48px; }
+	.billetterie__intro { display: none; }
+	.billetterie__liste { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+	.billet { padding: 12px 12px 12px 38px; }
+	.billet::before { left: 12px; width: 14px; height: 14px; margin-top: -7px; }
+	.billet strong { font-size: 17px; }
+	.billet span { font-size: 12px; }
+	.billetterie__boutique iframe { height: 620px; }
+	.billetterie__pied { justify-content: center; text-align: center; }
+	.billetterie__avenir { margin-top: 8px; }
+}
+.billet span { display: block; margin-top: 4px; line-height: 1.3; }
+
+/* ---------- Section féminine : mosaïque photos ---------- */
+.feminine-galerie .appli__entete { margin-bottom: clamp(24px, 3vw, 40px); }
+.feminine-mosaique { position: relative; display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.4vw, 18px); max-width: 1120px; margin-inline: auto; aspect-ratio: 16 / 9; }
+.feminine-mosaique::before { content: ''; position: absolute; z-index: 0; left: -14px; bottom: -14px; width: 42%; height: 46%; border-left: 4px solid var(--rose); border-bottom: 4px solid var(--rose); border-bottom-left-radius: 20px; }
+.feminine-mosaique figure { position: relative; z-index: 1; margin: 0; overflow: hidden; border-radius: 16px; background: var(--noir); box-shadow: 0 18px 40px rgba(0,0,0,.14); }
+.feminine-mosaique__grande { grid-row: 1 / span 2; }
+.feminine-mosaique img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.feminine-mosaique figure:hover img { transform: scale(1.04); }
+.feminine-mosaique figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(180deg, transparent, rgba(14,14,15,.78)); color: var(--blanc); font: 700 14px/1.2 var(--titre); letter-spacing: .1em; text-transform: uppercase; }
+.feminine-mosaique figcaption::before { content: ''; display: inline-block; width: 18px; height: 3px; margin: 0 10px 3px 0; background: var(--rose); vertical-align: middle; }
+@media (max-width: 760px) {
+	.feminine-mosaique { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; aspect-ratio: auto; }
+	.feminine-mosaique__grande { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 4 / 3; }
+	.feminine-mosaique figure:not(.feminine-mosaique__grande) { aspect-ratio: 1; }
+	.feminine-mosaique figcaption { padding: 28px 12px 10px; font-size: 12px; }
+	.feminine-mosaique::before { left: -8px; bottom: -8px; }
+}
+
+/* ===== Matchs pro : affiche du prochain match, fenêtre d'annonce, tableau de score, prochains matchs ===== */
+.affiche-match { position: relative; isolation: isolate; display: grid; overflow: hidden; border-radius: 16px; border-top: 5px solid var(--rouge); background: var(--noir); color: var(--blanc); }
+.affiche-match::before { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(110% 80% at 100% 0%, rgba(208,24,24,.5), transparent 60%), linear-gradient(160deg, var(--noir-2) 0%, var(--noir) 70%); }
+.affiche-match--visuel { grid-template-columns: minmax(0, 42%) 1fr; }
+.affiche-match__visuel { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; background: var(--blanc); }
+.affiche-match__infos { display: flex; flex-direction: column; justify-content: center; gap: 20px; padding: clamp(24px, 4vw, 40px); }
+.affiche-match p { margin: 0; }
+.affiche-match__etiquette { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font: 700 13px/1 var(--titre); letter-spacing: .16em; text-transform: uppercase; color: #ff5a5a; }
+.affiche-match__etiquette span { padding: 6px 10px; border-radius: 3px; background: var(--rouge); color: var(--blanc); letter-spacing: .1em; }
+.affiche-match__equipes { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
+.affiche-match__equipe { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.affiche-match__equipe .blason { width: 76px; height: 76px; }
+.affiche-match__equipe b { font: italic 800 clamp(18px, 2.4vw, 24px)/1.05 var(--titre); text-transform: uppercase; }
+.affiche-match__vs { font: italic 900 32px/1 var(--titre); color: var(--rouge); }
+.affiche-match__date { text-align: center; font: italic 800 clamp(24px, 3vw, 32px)/1.1 var(--titre); text-transform: uppercase; }
+.affiche-match__date span { display: block; margin-top: 6px; font: 600 15px/1.3 var(--corps); letter-spacing: 0; text-transform: none; font-style: normal; color: #c9c9cf; }
+.affiche-match__compte { margin: 0; }
+.affiche-match__compte strong { font-size: 30px; }
+.affiche-match__bouton { justify-content: center; width: 100%; }
+.contenu .affiche-match, .contenu .score-match, .contenu .prochains-matchs { margin-block: 2em; }
+
+.annonce-match { width: min(880px, calc(100% - 24px)); max-width: none; max-height: calc(100dvh - 24px); padding: 0; border: 0; background: transparent; overflow: visible; }
+.annonce-match[open] { animation: annonce-entree .5s cubic-bezier(.2, .8, .2, 1); }
+.annonce-match::backdrop { background: rgba(14,14,15,.75); backdrop-filter: blur(5px); }
+@keyframes annonce-entree { from { opacity: 0; transform: translateY(28px) scale(.97); } }
+.annonce-match .affiche-match { max-height: calc(100dvh - 80px); overflow-y: auto; box-shadow: 0 40px 110px rgba(0,0,0,.55); }
+.annonce-match__fermer { position: absolute; top: 14px; right: 14px; z-index: 2; width: 42px; height: 42px; border: 0; border-radius: 50%; background: rgba(255,255,255,.14); color: var(--blanc); font-size: 28px; line-height: 1; cursor: pointer; transition: background .2s; }
+.annonce-match__fermer:hover, .annonce-match__fermer:focus-visible { background: var(--rouge); }
+.annonce-match__plus-tard { display: block; margin: 14px auto 0; border: 0; background: none; color: rgba(255,255,255,.9); font: 600 14px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; text-decoration: underline; text-underline-offset: 5px; cursor: pointer; }
+@media (max-width: 700px) {
+	.affiche-match--visuel { grid-template-columns: 1fr; }
+	.affiche-match__visuel { height: 30vh; }
+	.affiche-match__infos { gap: 16px; padding: 22px 18px; }
+	.affiche-match__equipe .blason { width: 58px; height: 58px; }
+	.annonce-match__fermer { background: rgba(14,14,15,.7); }
+}
+
+.score-match { position: relative; overflow: hidden; padding: clamp(24px, 4vw, 38px); border-radius: 16px; border-top: 5px solid var(--rouge); background: radial-gradient(90% 70% at 50% 0%, rgba(208,24,24,.35), transparent 70%), var(--noir); color: var(--blanc); text-align: center; }
+.score-match p { margin: 0; }
+.score-match__etiquette { margin-bottom: 20px !important; font: 700 13px/1 var(--titre); letter-spacing: .16em; text-transform: uppercase; color: #ff5a5a; }
+.score-match__equipes { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; }
+.score-match__equipe { display: flex; flex-direction: column; align-items: center; gap: 10px; font: italic 800 clamp(17px, 2.4vw, 23px)/1.05 var(--titre); text-transform: uppercase; opacity: .7; }
+.score-match__equipe.est-gagnant { opacity: 1; }
+.score-match__equipe .blason { width: 76px; height: 76px; }
+.score-match__score { font: italic 900 clamp(52px, 9vw, 86px)/1 var(--titre); white-space: nowrap; }
+.score-match__sets { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 24px 0 0; padding: 0; list-style: none; }
+.score-match__sets li { display: flex; align-items: baseline; gap: 6px; margin: 0; padding: 10px 14px; border-radius: 8px; background: var(--noir-3); font: 800 23px/1 var(--titre); }
+.score-match__sets span { margin-right: 4px; font: 600 11px/1 var(--titre); letter-spacing: .12em; text-transform: uppercase; color: #b9b9c0; }
+.score-match__sets b { color: #85858d; }
+.score-match__sets b.est-gagne { color: var(--blanc); }
+.score-match__sets i { font-style: normal; color: var(--gris); }
+.score-match__infos { margin-top: 20px !important; font: 600 13px/1.3 var(--titre); letter-spacing: .1em; text-transform: uppercase; color: #b9b9c0; }
+
+.prochains-matchs { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.prochain-match { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 20px; border-left: 4px solid var(--gris); border-radius: 12px; background: var(--gris-clair); }
+.prochain-match--domicile { border-left-color: var(--rouge); }
+.prochain-match p { margin: 0; }
+.prochain-match__etiquette { font: 700 12px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; color: var(--rouge); }
+.prochain-match__equipes { display: flex; align-items: center; gap: 10px; font: italic 800 21px/1.1 var(--titre); text-transform: uppercase; color: var(--noir); }
+.prochain-match__equipes .blason { width: 38px; height: 38px; flex: none; }
+.prochain-match__date { font-size: 15px; color: var(--gris); }
+
+.chiffres-cles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.chiffres-cles > div { padding: 18px; border: 1px solid var(--ligne); border-radius: 12px; }
+.chiffres-cles strong { display: block; font: italic 900 40px/1 var(--titre); color: var(--rouge); }
+.chiffres-cles span { display: block; margin-top: 8px; font-size: 14px; line-height: 1.35; color: var(--gris); }
+.contenu blockquote.exergue { margin: 2em 0; padding: 4px 0 4px 22px; border-left: 4px solid var(--rouge); font: italic 700 clamp(22px, 3vw, 28px)/1.25 var(--titre); text-transform: uppercase; color: var(--noir); }
+
+/* ===== Billetterie : présentation de billetterie dédiée (bandeau, abonnement, billets, fenêtre de réservation) ===== */
+.billetterie-hvb { background: var(--gris-clair); padding: clamp(18px, 3vw, 32px) 0 clamp(40px, 6vw, 72px); }
+.bh-hero { position: relative; overflow: hidden; isolation: isolate; border-radius: 20px; padding: clamp(28px, 5vw, 56px); color: var(--blanc);
+	background: radial-gradient(90% 120% at 100% 50%, rgba(208,24,24,.55), transparent 60%), linear-gradient(120deg, #050506 0%, var(--noir-2) 55%, #2a0b0b 100%); }
+.bh-hero__filigrane { position: absolute; right: -4%; top: 50%; z-index: -1; width: min(52%, 520px); transform: translateY(-50%) rotate(-8deg); opacity: .16; filter: grayscale(.2); }
+.bh-hero__texte { max-width: 560px; }
+.bh-hero p { margin: 0; }
+.bh-hero__surtitre { font: 700 13px/1 var(--titre); letter-spacing: .16em; text-transform: uppercase; color: #ff6a6a; }
+.bh-hero__titre { margin: 14px 0 22px; font: italic 900 clamp(34px, 5vw, 58px)/1 var(--titre); text-transform: uppercase; }
+.bh-hero__titre span { color: var(--rouge); }
+.bh-hero__match { display: inline-block; padding: 14px 18px; border-radius: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(4px); }
+.bh-hero__etiquette { font: 700 12px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; color: #ff8a8a; }
+.bh-hero__affiche { margin-top: 8px !important; font: italic 800 26px/1.05 var(--titre); text-transform: uppercase; }
+.bh-hero__date { margin-top: 6px !important; font-size: 15px; color: #d6d6db; }
+.bh-hero__boutons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+
+.bh-grille { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(18px, 3vw, 32px); margin-top: clamp(26px, 4vw, 44px); align-items: start; }
+.bh-titre { margin: 0 0 16px; font: italic 800 clamp(24px, 2.6vw, 30px)/1 var(--titre); text-transform: uppercase; }
+.bh-entete { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+.bh-abonnement { overflow: hidden; border-radius: 18px; background: var(--noir); box-shadow: 0 18px 40px rgba(14,14,15,.16); }
+.bh-abonnement__visuel { position: relative; min-height: 300px; display: flex; align-items: flex-end; padding: 22px; background-size: cover; background-position: center; color: var(--blanc); }
+.bh-abonnement__visuel::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,14,15,.1) 20%, rgba(14,14,15,.92) 100%), linear-gradient(90deg, rgba(208,24,24,.35), transparent 70%); }
+.bh-abonnement__visuel p { position: relative; margin: 0; font: italic 900 clamp(34px, 4vw, 46px)/.95 var(--titre); text-transform: uppercase; }
+.bh-abonnement__visuel span { display: block; margin-bottom: 10px; font: 700 13px/1 var(--titre); letter-spacing: .16em; color: #ff7a7a; font-style: normal; }
+.bh-abonnement__carte { margin: -6px 14px 14px; padding: 20px; border-radius: 14px; background: var(--blanc); position: relative; }
+.bh-abonnement__carte h3 { margin: 0 0 6px; font: 800 22px/1.1 var(--titre); text-transform: uppercase; }
+.bh-abonnement__carte p { margin: 0 0 16px; color: #55555c; font-size: 15px; }
+
+.bh-billet { display: grid; grid-template-columns: 150px minmax(0, 1fr) auto; margin-bottom: 14px; border-radius: 16px; background: var(--blanc); box-shadow: 0 10px 28px rgba(14,14,15,.07); transition: transform .2s, box-shadow .2s; }
+.bh-billet:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(14,14,15,.12); }
+.bh-billet__souche { position: relative; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 18px 12px; border-right: 2px dashed var(--ligne); }
+.bh-billet__souche::before, .bh-billet__souche::after { content: ''; position: absolute; right: -11px; width: 20px; height: 20px; border-radius: 50%; background: var(--gris-clair); }
+.bh-billet__souche::before { top: -10px; } .bh-billet__souche::after { bottom: -10px; }
+.bh-billet__souche .blason { width: 50px; height: 50px; }
+.bh-billet__souche span { font: italic 900 16px/1 var(--titre); color: var(--rouge); }
+.bh-billet__corps { padding: 18px 20px; }
+.bh-billet__corps p { margin: 0; }
+.bh-billet__titre { margin: 0; font: 800 21px/1.1 var(--titre); text-transform: uppercase; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.bh-billet__titre i { width: 7px; height: 7px; border-radius: 2px; background: var(--rouge); }
+.bh-billet__competition { margin-top: 4px !important; font: 600 13px/1.2 var(--titre); letter-spacing: .1em; text-transform: uppercase; color: var(--gris); }
+.bh-billet__pastilles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px !important; }
+.bh-billet__pastilles span { padding: 6px 10px; border-radius: 8px; background: var(--gris-clair); font: 600 13px/1 var(--corps); }
+.bh-billet__pastilles span + span { background: transparent; border: 1px solid var(--ligne); text-transform: uppercase; font-size: 12px; letter-spacing: .04em; }
+.bh-billet__offres ul { list-style: none; margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid var(--ligne); display: grid; gap: 6px; }
+.bh-billet__offres li { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
+.bh-billet__offres b { font-weight: 700; text-align: right; }
+.bh-billet__actions { display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 8px; padding: 18px 20px; border-left: 1px solid var(--ligne); min-width: 170px; }
+.bh-billet__offres-lien { border: 0; background: none; color: var(--noir); font: 600 14px/1 var(--corps); cursor: pointer; padding: 6px; text-decoration: underline; text-underline-offset: 4px; }
+.bh-billet__offres-lien:hover { color: var(--rouge); }
+.bh-billet__bientot { padding: 10px 14px; border-radius: 8px; background: var(--gris-clair); color: var(--gris); font: 700 13px/1.2 var(--titre); letter-spacing: .08em; text-transform: uppercase; text-align: center; }
+.bh-billet--bientot { opacity: .78; }
+.bh-billet--bientot:hover { transform: none; box-shadow: 0 10px 28px rgba(14,14,15,.07); }
+.bh-vide { color: var(--gris); }
+
+.bh-infos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: clamp(26px, 4vw, 40px); }
+.bh-infos > div { display: flex; gap: 14px; align-items: center; padding: 18px; border-radius: 14px; background: var(--blanc); }
+.bh-infos p { margin: 0; font-size: 14px; color: #55555c; }
+.bh-infos strong { display: block; color: var(--noir); font-size: 15px; }
+.bh-infos .icone, .bh-infos__pastille { flex: none; width: 44px; height: 44px; border-radius: 50%; background: rgba(208,24,24,.1); color: var(--rouge); display: grid; place-items: center; font: 800 14px/1 var(--titre); padding: 11px; }
+.bh-texte { padding-block: 24px 0; }
+.bh-cgv { margin: 18px 0 0; font-size: 13px; color: var(--gris); }
+
+.bh-fenetre { width: min(760px, calc(100% - 24px)); max-width: none; height: min(880px, calc(100dvh - 24px)); max-height: none; padding: 0; border: 0; border-radius: 18px; overflow: hidden; background: var(--blanc); box-shadow: 0 40px 110px rgba(0,0,0,.45); }
+.bh-fenetre[open] { display: flex; flex-direction: column; animation: annonce-entree .35s cubic-bezier(.2, .8, .2, 1); }
+.bh-fenetre::backdrop { background: rgba(14,14,15,.7); backdrop-filter: blur(4px); }
+.bh-fenetre__entete { display: flex; align-items: center; gap: 14px; padding: 14px 16px 14px 22px; background: var(--noir); color: var(--blanc); border-bottom: 3px solid var(--rouge); }
+.bh-fenetre__entete p { margin: 0; flex: 1; font: italic 800 20px/1.1 var(--titre); text-transform: uppercase; }
+.bh-fenetre__externe { color: #d6d6db; font-size: 13px; }
+.bh-fenetre__fermer { width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(255,255,255,.14); color: var(--blanc); font-size: 26px; line-height: 1; cursor: pointer; }
+.bh-fenetre__fermer:hover { background: var(--rouge); }
+.bh-fenetre__corps { flex: 1; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.bh-fenetre .billetterie__boutique { border: 0; border-radius: 0; min-height: 100%; }
+.bh-fenetre .billetterie__boutique iframe { height: 760px; }
+
+@media (max-width: 900px) {
+	.bh-grille { grid-template-columns: 1fr; }
+	.bh-abonnement__visuel { min-height: 220px; }
+	.bh-infos { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+	.bh-hero__filigrane { width: 80%; right: -25%; opacity: .1; }
+	.bh-billet { grid-template-columns: 96px minmax(0, 1fr); }
+	.bh-billet__souche { flex-direction: column; gap: 4px; padding: 14px 6px; }
+	.bh-billet__souche .blason { width: 40px; height: 40px; }
+	.bh-billet__corps { padding: 14px; }
+	.bh-billet__titre { font-size: 18px; }
+	.bh-billet__actions { grid-column: 1 / -1; flex-direction: row; border-left: 0; border-top: 1px solid var(--ligne); padding: 12px 14px; min-width: 0; }
+	.bh-billet__actions .bouton { flex: 1; }
+	.bh-fenetre { width: 100%; height: 100dvh; border-radius: 0; }
+	.bh-fenetre__externe { display: none; }
+}
+.bh-hero .bouton--contour { background: transparent; border: 2px solid rgba(255,255,255,.8); color: var(--blanc); }
+.bh-hero .bouton--contour:hover { background: var(--blanc); color: var(--rouge); }
+
+/* ===== Accueil (sur le modèle de tourcoing-volley.com) ===== */
+/* En-tête transparent sur la grande photo, foncé dès qu'on défile. */
+body.home .entete:not(.is-defile) { background: linear-gradient(180deg, rgba(14,14,15,.78) 0%, rgba(14,14,15,0) 100%); }
+body.home .entete:not(.is-defile)::after { opacity: 0; }
+
+/* La barre rouge du haut (36 px) est déduite pour que flèches et points restent à l'écran */
+.acc-hero { position: relative; min-height: max(600px, calc(100svh - 36px)); margin-top: calc(-1 * var(--entete-h)); overflow: hidden; background: var(--noir); color: var(--blanc); text-align: center; }
+.acc-hero__diapos { position: absolute; inset: 0; touch-action: pan-y; }
+.acc-diapo { position: absolute; inset: 0; isolation: isolate; display: grid; place-items: center; padding: calc(var(--entete-h) + 40px) calc(var(--gouttiere) + 70px) 100px; opacity: 0; visibility: hidden; transition: opacity .9s ease, visibility .9s; }
+.acc-diapo.is-active { opacity: 1; visibility: visible; }
+.acc-hero__image { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); transition: transform 7s ease-out; }
+.acc-diapo.is-active .acc-hero__image { transform: scale(1); }
+.acc-diapo::after { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(70% 60% at 50% 50%, rgba(14,14,15,.35), rgba(14,14,15,.72)), linear-gradient(180deg, rgba(14,14,15,.2) 60%, rgba(14,14,15,.85) 100%); }
+.acc-hero__fleche { position: absolute; top: 50%; z-index: 2; display: grid; place-items: center; width: 54px; height: 54px; padding: 0; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(14,14,15,.45); color: var(--blanc); cursor: pointer; transform: translateY(-50%); backdrop-filter: blur(4px); transition: background .2s, border-color .2s; }
+.acc-hero__fleche:hover, .acc-hero__fleche:focus-visible { background: var(--rouge); border-color: var(--rouge); }
+.acc-hero__fleche .icone { width: 22px; height: 22px; }
+.acc-hero__fleche--prec { left: var(--gouttiere); }
+.acc-hero__fleche--suiv { right: var(--gouttiere); }
+.acc-hero__texte .acc-hero__match { max-width: 720px; margin-inline: auto; }
+.acc-hero__texte { max-width: 900px; }
+.acc-hero__texte p { margin: 0; }
+.acc-hero__etiquette { display: inline-block; padding: 7px 14px; border-radius: 999px; background: var(--rouge); font: 700 13px/1 var(--titre); letter-spacing: .14em; text-transform: uppercase; }
+.acc-hero__titre { margin-top: 18px !important; font: italic 900 clamp(48px, 9vw, 112px)/.92 var(--titre); text-transform: uppercase; text-shadow: 0 6px 30px rgba(0,0,0,.45); }
+.acc-hero__match { margin-top: 14px !important; font: italic 800 clamp(22px, 3.2vw, 38px)/1.1 var(--titre); text-shadow: 0 3px 16px rgba(0,0,0,.55); }
+.acc-hero__compte { max-width: 460px; margin: 26px auto 0; }
+.acc-hero__compte div { background: rgba(14,14,15,.55); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,.12); }
+.acc-hero__boutons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 26px; }
+.acc-hero .bouton--contour { background: rgba(14,14,15,.25); border-color: rgba(255,255,255,.85); }
+.acc-hero__points { position: absolute; z-index: 2; bottom: 34px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; }
+.acc-hero__points button { width: 10px; height: 10px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.45); cursor: pointer; transition: width .3s, background .3s; }
+.acc-hero__points button[aria-current="true"] { width: 28px; border-radius: 6px; background: var(--blanc); }
+.acc-hero__suite { position: absolute; z-index: 2; right: var(--gouttiere); bottom: 26px; color: var(--blanc); opacity: .8; }
+.acc-hero__suite .icone { width: 28px; height: 28px; animation: rebond 2s infinite; }
+@keyframes rebond { 50% { transform: translateY(6px); } }
+
+.acc-titre { margin: 0 0 30px; text-align: center; font: italic 900 clamp(32px, 4.5vw, 52px)/1 var(--titre); text-transform: uppercase; }
+.acc-titre::after { content: ''; display: block; width: 70px; height: 4px; margin: 16px auto 0; background: var(--rouge); transform: skewX(-20deg); }
+.acc-vibrer { background: var(--gris-clair); padding: clamp(48px, 7vw, 90px) 0; }
+.acc-vibrer__boite { max-width: 1000px; margin: 0 auto; padding: clamp(16px, 2.5vw, 26px); border-radius: 20px; background: #e9e9ed; }
+.acc-vibrer .bh-billet__souche::before, .acc-vibrer .bh-billet__souche::after { background: #e9e9ed; }
+.acc-vibrer .bh-billet:last-child { margin-bottom: 0; }
+.acc-vibrer .bh-billet__offres-lien { text-align: center; }
+
+.acc-scores { padding: clamp(48px, 7vw, 90px) 0; background: var(--blanc); }
+.acc-scores__grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(18px, 3vw, 32px); align-items: start; }
+.acc-carte { padding: clamp(18px, 2.5vw, 28px); border-radius: 18px; background: var(--gris-clair); }
+.acc-carte__titre { margin: 0 0 14px; font: italic 800 26px/1 var(--titre); text-transform: uppercase; }
+.acc-carte .carte__entete { display: flex; justify-content: space-between; align-items: center; }
+.acc-carte .lien-fleche { margin-top: 16px; }
+.acc-journees { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.acc-journee { padding: 12px 14px; border-radius: 12px; background: var(--blanc); }
+.acc-journee p { margin: 0; }
+.acc-journee__info { display: flex; justify-content: space-between; gap: 10px; font: 600 12px/1.2 var(--titre); letter-spacing: .08em; text-transform: uppercase; color: var(--gris); }
+.acc-journee__match { display: grid; grid-template-columns: minmax(0, 1fr) 34px auto 34px minmax(0, 1fr); align-items: center; gap: 10px; margin-top: 8px !important; }
+.acc-journee__match .blason { width: 34px; height: 34px; }
+.acc-journee__equipe { font: 700 16px/1.1 var(--titre); text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acc-journee__equipe:first-child { text-align: right; }
+.acc-journee__score { min-width: 64px; padding: 6px 10px; border-radius: 8px; background: var(--gris-clair); text-align: center; font: 800 16px/1 var(--titre); }
+.acc-journee--jouee .acc-journee__score { background: var(--noir); color: var(--blanc); }
+
+.acc-lnvtv { padding: clamp(40px, 6vw, 70px) 0; background: var(--blanc); }
+.acc-lnvtv__bandeau { position: relative; display: grid; grid-template-columns: 1fr minmax(0, 520px) 1fr; align-items: end; min-height: 260px; overflow: hidden; border-radius: 18px; text-decoration: none; color: var(--blanc);
+	background: radial-gradient(60% 120% at 50% 100%, rgba(226,36,58,.35), transparent 60%), linear-gradient(115deg, #02024a 0%, #0b0b8c 50%, #02024a 100%); box-shadow: 0 20px 50px rgba(2,2,74,.25); }
+.acc-lnvtv__bandeau::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 22px); }
+.acc-lnvtv__joueur { position: relative; height: 270px; width: auto; justify-self: center; filter: drop-shadow(0 10px 24px rgba(0,0,0,.45)); transition: transform .4s; }
+.acc-lnvtv__bandeau:hover .acc-lnvtv__joueur--gauche { transform: translateX(-6px) scale(1.02); }
+.acc-lnvtv__bandeau:hover .acc-lnvtv__joueur--droite { transform: translateX(6px) scale(1.02); }
+.acc-lnvtv__texte { position: relative; align-self: center; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 28px 10px; text-align: center; }
+.acc-lnvtv__surtitre { font: 700 12px/1 var(--titre); letter-spacing: .18em; text-transform: uppercase; color: #aeb4ff; }
+.acc-lnvtv__titre { font: italic 900 clamp(34px, 4.6vw, 54px)/1 var(--titre); text-transform: uppercase; }
+.acc-lnvtv__soustitre { font: 600 16px/1.2 var(--corps); color: #dfe1ff; }
+.acc-lnvtv__logo { width: 150px; height: auto; margin: 6px 0 10px; }
+.acc-lnvtv__bouton { pointer-events: none; }
+
+@media (max-width: 900px) {
+	.acc-scores__grille { grid-template-columns: 1fr; }
+	.acc-lnvtv__bandeau { grid-template-columns: 1fr 1fr; }
+	.acc-lnvtv__texte { grid-column: 1 / -1; grid-row: 1; padding-bottom: 0; }
+	.acc-lnvtv__joueur { height: 200px; }
+}
+@media (max-width: 760px) { .acc-hero { min-height: max(560px, 100svh); } }
+@media (max-width: 600px) {
+	.acc-diapo { padding: calc(var(--entete-h) + 24px) 18px 110px; }
+	.acc-hero__fleche { top: auto; bottom: 22px; width: 42px; height: 42px; transform: none; }
+	.acc-hero__fleche--prec { left: 16px; }
+	.acc-hero__fleche--suiv { right: 16px; }
+	.acc-hero__points { bottom: 36px; }
+	.acc-hero__suite { display: none; }
+	.acc-hero__compte strong { font-size: 26px; }
+	.acc-journee__equipe { font-size: 14px; }
+	.acc-journee__match { grid-template-columns: minmax(0, 1fr) 28px auto 28px minmax(0, 1fr); gap: 6px; }
+	.acc-journee__match .blason { width: 28px; height: 28px; }
+	.acc-journee__score { min-width: 52px; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .acc-diapo { transition: opacity .2s; } .acc-hero__image { transition: none; transform: none !important; } .acc-hero__suite .icone { animation: none; } }
+
+/* ===== Présentation du club : défilé des joueurs en filigrane dans le bandeau (repris de l'ancienne accueil) ===== */
+.bandeau--defile { isolation: isolate; overflow: hidden; min-height: clamp(420px, 70vh, 700px); background: var(--noir); }
+.bandeau--defile::before { display: none; }
+.bandeau--defile .ouverture__defile { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.bandeau__lueur { position: absolute; width: 60vmax; height: 60vmax; left: -30vmax; top: 10%; border-radius: 50%; background: radial-gradient(circle, rgba(208,24,24,.22), transparent 60%); animation: lueur 16s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { .bandeau__lueur { animation: none; } }

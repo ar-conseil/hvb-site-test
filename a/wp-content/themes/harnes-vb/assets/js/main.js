@@ -63,40 +63,13 @@ document.querySelectorAll('[data-compte]').forEach((compte) => {
 	setInterval(maj, 1000);
 });
 
-// Billetterie : le choix d'un match change la boutique Billetweb affichée.
-document.querySelectorAll('[data-boutique]').forEach((bouton) => {
-	bouton.addEventListener('click', () => {
-		document.getElementById('boutique').src = bouton.dataset.boutique;
-		document.getElementById('boutique-lien').href = bouton.dataset.lien;
-		document.querySelectorAll('[data-boutique]').forEach((b) => b.setAttribute('aria-pressed', b === bouton));
-		// Sur téléphone, la boutique est sous la liste : on y descend directement.
-		if (window.matchMedia('(max-width: 900px)').matches) {
-			document.getElementById('boutique-zone').scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
-	});
-});
-
-// Boutique Billetweb : le cadre prend la hauteur de son contenu (envoyée par Billetweb à chaque étape),
-// pour qu'il n'y ait qu'un seul défilement, celui de la page, pendant la réservation.
-(() => {
-	const cadre = document.getElementById('boutique');
-	if (!cadre) return;
-	const boite = cadre.parentElement;
-	addEventListener('message', (e) => {
-		if (e.origin !== 'https://www.billetweb.fr' || typeof e.data !== 'string') return;
-		const hauteur = e.data.match(/_(\d+)_https?:/);
-		if (hauteur) {
-			const h = Math.max(480, Number(hauteur[1]));
-			if (Math.abs(cadre.offsetHeight - h) > 4) cadre.style.height = `${h}px`;
-		} else if (e.data.startsWith('orderstate_')) {
-			// Nouvelle étape : on revient en haut de la boutique si elle est sortie de l'écran.
-			const haut = boite.getBoundingClientRect().top;
-			if (haut < 0) scrollTo({ top: scrollY + haut - 100, behavior: 'smooth' });
-		} else if (e.data.startsWith('fullscreen_')) {
-			boite.classList.toggle('billetterie__boutique--plein-ecran', e.data.startsWith('fullscreen_on'));
-		}
-	});
-})();
+// Billetterie : « Voir les offres » déplie les tarifs du match sous le billet.
+document.querySelectorAll('.billetterie-hvb .bh-billet__offres-lien').forEach((b) => b.addEventListener('click', () => {
+	const ouvert = b.getAttribute('aria-expanded') === 'true';
+	document.getElementById(b.getAttribute('aria-controls')).hidden = ouvert;
+	b.setAttribute('aria-expanded', String(!ouvert));
+	b.textContent = ouvert ? 'Voir les offres' : 'Masquer les offres';
+}));
 
 // Visionneuse : les photos des galeries s'ouvrent en grand, avec navigation.
 (() => {
@@ -345,3 +318,76 @@ document.querySelectorAll('.carte-differee').forEach((bloc) => {
 		bloc.replaceWith(carte);
 	});
 });
+
+// Annonce du prochain match à domicile : la fenêtre s'ouvre une fois par visite (onglet), pas à chaque page.
+(() => {
+	const fenetre = document.querySelector('.annonce-match');
+	if (!fenetre || typeof fenetre.showModal !== 'function') return;
+	let deja = null;
+	try { deja = sessionStorage.getItem('hvb-annonce'); } catch (e) { /* stockage indisponible : on affiche */ }
+	if (deja === fenetre.dataset.annonce) return;
+	const fermer = () => fenetre.close();
+	fenetre.querySelector('.annonce-match__fermer').addEventListener('click', fermer);
+	fenetre.querySelector('.annonce-match__plus-tard').addEventListener('click', fermer);
+	fenetre.addEventListener('click', (e) => { if (e.target === fenetre) fermer(); });
+	setTimeout(() => {
+		if (document.querySelector('dialog[open]')) return;
+		fenetre.showModal();
+		try { sessionStorage.setItem('hvb-annonce', fenetre.dataset.annonce); } catch (e) { /* rien */ }
+	}, 1200);
+})();
+
+// Accueil : carrousel « à la une ». Défile toutes les 7 s (pas si l'animation est réduite), s'arrête au survol
+// et au clavier ; flèches, points, touches gauche/droite et balayage sur téléphone.
+(() => {
+	const bloc = document.querySelector('[data-carrousel-une]');
+	if (!bloc) return;
+	const diapos = [...bloc.querySelectorAll('.acc-diapo')];
+	const points = [...bloc.querySelectorAll('[data-diapo]')];
+	if (diapos.length < 2) return;
+	const reduit = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	let actif = 0;
+	let minuterie;
+	let pause = false;
+	const montrer = (n) => {
+		actif = (n + diapos.length) % diapos.length;
+		diapos.forEach((d, i) => {
+			const visible = i === actif;
+			d.classList.toggle('is-active', visible);
+			d.toggleAttribute('inert', !visible);
+			d.setAttribute('aria-hidden', String(!visible));
+			if (visible) d.querySelector('img').loading = 'eager';
+		});
+		points.forEach((p, i) => p.toggleAttribute('aria-current', i === actif));
+	};
+	const lancer = () => {
+		clearInterval(minuterie);
+		if (!reduit && !pause && !document.hidden) minuterie = setInterval(() => montrer(actif + 1), 7000);
+	};
+	const aller = (n) => { montrer(n); lancer(); };
+	bloc.querySelector('[data-une-prec]').addEventListener('click', () => aller(actif - 1));
+	bloc.querySelector('[data-une-suiv]').addEventListener('click', () => aller(actif + 1));
+	points.forEach((p, i) => p.addEventListener('click', () => aller(i)));
+	bloc.addEventListener('keydown', (e) => {
+		if (e.key === 'ArrowLeft') aller(actif - 1);
+		else if (e.key === 'ArrowRight') aller(actif + 1);
+	});
+	const arreter = () => { pause = true; clearInterval(minuterie); };
+	const reprendre = () => { pause = false; lancer(); };
+	bloc.addEventListener('mouseenter', arreter);
+	bloc.addEventListener('mouseleave', reprendre);
+	bloc.addEventListener('focusin', arreter);
+	bloc.addEventListener('focusout', (e) => { if (!bloc.contains(e.relatedTarget)) reprendre(); });
+	// Balayage horizontal sur écran tactile.
+	let depart = null;
+	bloc.addEventListener('touchstart', (e) => { depart = e.touches[0]; }, { passive: true });
+	bloc.addEventListener('touchend', (e) => {
+		if (!depart) return;
+		const dx = e.changedTouches[0].clientX - depart.clientX;
+		const dy = e.changedTouches[0].clientY - depart.clientY;
+		if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) aller(actif + (dx < 0 ? 1 : -1));
+		depart = null;
+	});
+	document.addEventListener('visibilitychange', () => (document.hidden ? clearInterval(minuterie) : lancer()));
+	lancer();
+})();
