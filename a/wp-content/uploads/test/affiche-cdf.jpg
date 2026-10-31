@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png">
+	<script>document.documentElement.classList.add('js');</script>
+	<title>Harnes Volley-Ball (HVB) · Club de volley à Harnes, Volstar M2</title>
+<meta name='robots' content='noindex, nofollow' />
+<meta name="description" content="Club de volley de Harnes (Pas-de-Calais) depuis 1949 : Volstar Masculine 2, formation des jeunes, loisir et volley santé. Matchs, billetterie, actus.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Harnes Volley-Ball">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Harnes Volley-Ball (HVB) · Club de volley à Harnes, Volstar M2">
+<meta property="og:description" content="Club de volley de Harnes (Pas-de-Calais) depuis 1949 : Volstar Masculine 2, formation des jeunes, loisir et volley santé. Matchs, billetterie, actus.">
+<meta property="og:url" content="http://127.0.0.1:9400/">
+<meta property="og:image" content="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1600x900.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@harnesvb">
+<meta name="theme-color" content="#0e0e0f">
+<link rel="apple-touch-icon" href="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png">
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="preload" href="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/fonts/barlow-condensed-800-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/fonts/barlow-condensed-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SportsOrganization","@id":"http://127.0.0.1:9400/#club","name":"Harnes Volley-Ball","alternateName":"HVB","url":"http://127.0.0.1:9400/","logo":"http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png","image":"http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1600x900.jpg","sport":"Volley-ball","foundingDate":"1949","slogan":"Ensemble vers les sommets !","telephone":"+33 3 21 18 65 02","email":"contact@harnes-volleyball.fr","address":{"@type":"PostalAddress","streetAddress":"128 chemin Valois","postalCode":"62440","addressLocality":"Harnes","addressRegion":"Hauts-de-France","addressCountry":"FR"},"location":{"@type":"SportsActivityLocation","name":"Salle Régionale Maréchal","address":{"@type":"PostalAddress","streetAddress":"128 chemin Valois","postalCode":"62440","addressLocality":"Harnes","addressRegion":"Hauts-de-France","addressCountry":"FR"}},"sameAs":["https://www.facebook.com/harnes.volleyball62","https://www.instagram.com/harnesvb","https://x.com/harnesvb","https://www.youtube.com/c/hvbtv","https://www.tiktok.com/@hvb.and.co","https://www.linkedin.com/in/harnes-volley-ball-ab2b63164/"]},{"@type":"WebSite","@id":"http://127.0.0.1:9400/#site","url":"http://127.0.0.1:9400/","name":"Harnes Volley-Ball","inLanguage":"fr-FR","publisher":{"@id":"http://127.0.0.1:9400/#club"}},{"@type":"SportsEvent","name":"Harnes Volley-Ball – Grand Nancy (Coupe de France)","sport":"Volley-ball","startDate":"2026-11-03T20:00:00+01:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"SportsActivityLocation","name":"Salle Régionale Maréchal","address":{"@type":"PostalAddress","streetAddress":"128 chemin Valois","postalCode":"62440","addressLocality":"Harnes","addressRegion":"Hauts-de-France","addressCountry":"FR"}},"image":"http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1600x900.jpg","description":"Match de Coupe de France à la salle Régionale Maréchal de Harnes.","homeTeam":{"@type":"SportsTeam","name":"Harnes Volley-Ball"},"awayTeam":{"@type":"SportsTeam","name":"Grand Nancy"},"organizer":{"@id":"http://127.0.0.1:9400/#club"},"offers":{"@type":"Offer","url":"https://www.billetweb.fr/shop.php?event=coupe-de-france-hvb-vs-grand-nancy","availability":"https://schema.org/InStock","price":"5.00","priceCurrency":"EUR","validFrom":"2026-10-24T07:24:53+00:00","priceSpecification":{"@type":"PriceSpecification","minPrice":"0","maxPrice":"5.00","priceCurrency":"EUR"}}},{"@type":"SportsEvent","name":"Harnes Volley-Ball – Chalon-sur-Saône (Volstar Masculine 2)","sport":"Volley-ball","startDate":"2026-11-14T20:00:00+01:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"SportsActivityLocation","name":"Salle Régionale Maréchal","address":{"@type":"PostalAddress","streetAddress":"128 chemin Valois","postalCode":"62440","addressLocality":"Harnes","addressRegion":"Hauts-de-France","addressCountry":"FR"}},"image":"http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1600x900.jpg","description":"Match de Volstar Masculine 2 à la salle Régionale Maréchal de Harnes.","homeTeam":{"@type":"SportsTeam","name":"Harnes Volley-Ball"},"awayTeam":{"@type":"SportsTeam","name":"Chalon-sur-Saône"},"organizer":{"@id":"http://127.0.0.1:9400/#club"}},{"@type":"SportsEvent","name":"Harnes Volley-Ball – France Avenir 2024 (Volstar Masculine 2)","sport":"Volley-ball","startDate":"2026-11-27T20:00:00+01:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"SportsActivityLocation","name":"Salle Régionale Maréchal","address":{"@type":"PostalAddress","streetAddress":"128 chemin Valois","postalCode":"62440","addressLocality":"Harnes","addressRegion":"Hauts-de-France","addressCountry":"FR"}},"image":"http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1600x900.jpg","description":"Match de Volstar Masculine 2 à la salle Régionale Maréchal de Harnes.","homeTeam":{"@type":"SportsTeam","name":"Harnes Volley-Ball"},"awayTeam":{"@type":"SportsTeam","name":"France Avenir 2024"},"organizer":{"@id":"http://127.0.0.1:9400/#club"}}]}</script>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='hvb-fonts-css' href='http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/fonts/polices.css?ver=1792534769' media='all' />
+<link rel='stylesheet' id='hvb-css' href='http://127.0.0.1:9400/wp-content/themes/harnes-vb/style.css?ver=1793436217' media='all' />
+<link rel="canonical" href="http://127.0.0.1:9400/" />
+</head>
+<body class="home wp-singular page-template-default page page-id-249 wp-embed-responsive wp-theme-harnes-vb page-accueil">
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+<div class="barre-haut">
+	<div class="barre-haut__contenu">
+		<p class="barre-haut__devise">Ensemble vers les sommets ! <strong>#TEAMOBUS</strong></p>
+		<ul class="reseaux"><li><a href="https://www.facebook.com/harnes.volleyball62" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v10h4V14h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg></a></li><li><a href="https://www.instagram.com/harnesvb" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3s0 2.4-.1 3.3c-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 13.1 5.3 12.9 5.3 12s0-2.4.1-3.3C5.5 6.5 6.5 5.5 8.7 5.4 9.6 4 9.8 4 12 4zm0-1.7c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8 3.7 8.3 3.7 12s0 2.6.1 3.4c.1 3 1.8 4.6 4.8 4.8.8 0 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8 0-.8.1-1.1.1-3.4s0-2.6-.1-3.4c-.1-3-1.8-4.6-4.8-4.8-.8-.1-1.1-.1-3.4-.1z"/></svg></a></li><li><a href="https://x.com/harnesvb" target="_blank" rel="noopener" aria-label="X"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.6h-6.3l-4.9-6.4-5.6 6.4H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.5h1.7L7.4 4.7H5.6l11.1 14.8z"/></svg></a></li><li><a href="https://www.youtube.com/c/hvbtv" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li><li><a href="https://www.tiktok.com/@hvb.and.co" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.8a5.7 5.7 0 1 0 4.9 5.6V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg></a></li><li><a href="https://www.linkedin.com/in/harnes-volley-ball-ab2b63164/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 21H3.3V9.2h3.6V21zM5.1 7.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM21 21h-3.6v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9.7V9.2h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5V21z"/></svg></a></li></ul>	</div>
+</div>
+
+<header class="entete" id="entete">
+	<div class="entete__barre">
+		<a class="entete__logo" href="http://127.0.0.1:9400/" aria-label="Harnes Volley-Ball, accueil">
+			<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="" width="56" height="56">
+			<span class="entete__nom">Harnes<br><strong>Volley-Ball</strong></span>
+		</a>
+
+		<nav class="nav" id="nav" aria-label="Menu principal">
+			<ul id="menu-menu-principal" class="nav__liste"><li id="menu-item-2463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2463"><a href="http://127.0.0.1:9400/presentation-du-club/">Le club</a>
+<ul class="sub-menu">
+	<li id="menu-item-2464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2464"><a href="http://127.0.0.1:9400/presentation-du-club/">Présentation</a></li>
+	<li id="menu-item-2465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2465"><a href="http://127.0.0.1:9400/histoire-du-club/">Histoire du club</a></li>
+	<li id="menu-item-2466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2466"><a href="http://127.0.0.1:9400/direction/">Direction</a></li>
+	<li id="menu-item-2467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2467"><a href="http://127.0.0.1:9400/staff-technique/">Staff technique</a></li>
+	<li id="menu-item-2468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="http://127.0.0.1:9400/benevoles/">Bénévoles</a></li>
+	<li id="menu-item-2469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2469"><a href="http://127.0.0.1:9400/infrastructures/">Infrastructures</a></li>
+	<li id="menu-item-2470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2470"><a href="http://127.0.0.1:9400/inscription/">Inscription</a></li>
+</ul>
+</li>
+<li id="menu-item-2471" class="menu-volstar menu-vedette menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2471"><a href="http://127.0.0.1:9400/effectif/">Volstar M2</a>
+<ul class="sub-menu">
+	<li id="menu-item-2472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2472"><a href="http://127.0.0.1:9400/effectif/">Effectif 2026-2027</a></li>
+	<li id="menu-item-2473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2473"><a href="http://127.0.0.1:9400/calendrier-resultats/">Calendrier et résultats</a></li>
+	<li id="menu-item-2474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2474"><a href="http://127.0.0.1:9400/classement/">Classement</a></li>
+	<li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2475"><a href="http://127.0.0.1:9400/billetterie/">Billetterie</a></li>
+</ul>
+</li>
+<li id="menu-item-2476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2476"><a href="http://127.0.0.1:9400/nationale-2/">Amateurs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2477"><a href="http://127.0.0.1:9400/nationale-2/">Nationale 2</a></li>
+	<li id="menu-item-2478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2478"><a href="http://127.0.0.1:9400/pre-nationale/">Pré-Nationale</a></li>
+	<li id="menu-item-2479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2479"><a href="http://127.0.0.1:9400/departementale-4/">Départementale 4</a></li>
+	<li id="menu-item-2480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2480"><a href="http://127.0.0.1:9400/departementale-5/">Départementale 5</a></li>
+	<li id="menu-item-2481" class="menu-feminine menu-item menu-item-type-post_type menu-item-object-page menu-item-2481"><a href="http://127.0.0.1:9400/section-feminine/">Section féminine</a></li>
+</ul>
+</li>
+<li id="menu-item-2482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2482"><a href="http://127.0.0.1:9400/ecole-de-volley/">Formation</a>
+<ul class="sub-menu">
+	<li id="menu-item-2483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2483"><a href="http://127.0.0.1:9400/baby-volley/">Baby Volley</a></li>
+	<li id="menu-item-2484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2484"><a href="http://127.0.0.1:9400/ecole-de-volley/">École de volley</a></li>
+	<li id="menu-item-2485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2485"><a href="http://127.0.0.1:9400/categorie-m13/">Catégorie M13</a></li>
+	<li id="menu-item-2486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2486"><a href="http://127.0.0.1:9400/categorie-m15/">Catégorie M15</a></li>
+	<li id="menu-item-2487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2487"><a href="http://127.0.0.1:9400/stages/">Stages jeunes</a></li>
+</ul>
+</li>
+<li id="menu-item-2488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2488"><a href="http://127.0.0.1:9400/volley-loisir/">Volley pour tous</a>
+<ul class="sub-menu">
+	<li id="menu-item-2489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2489"><a href="http://127.0.0.1:9400/volley-loisir/">Volley Loisir</a></li>
+	<li id="menu-item-2490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2490"><a href="http://127.0.0.1:9400/volley-sante/">Volley Santé</a></li>
+</ul>
+</li>
+<li id="menu-item-2491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2491"><a href="http://127.0.0.1:9400/actus/">Actus</a></li>
+<li id="menu-item-2492" class="menu-partenaires menu-vedette menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2492"><a href="http://127.0.0.1:9400/partenaires-prives/">Partenaires</a>
+<ul class="sub-menu">
+	<li id="menu-item-2493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2493"><a href="http://127.0.0.1:9400/devenir-partenaire/">Devenir partenaire</a></li>
+	<li id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494"><a href="http://127.0.0.1:9400/partenaires-publics/">Partenaires publics</a></li>
+	<li id="menu-item-2495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2495"><a href="http://127.0.0.1:9400/partenaires-prives/">Partenaires privés</a></li>
+</ul>
+</li>
+<li id="menu-item-2496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a href="http://127.0.0.1:9400/application/">L&rsquo;appli</a></li>
+<li id="menu-item-2497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a href="http://127.0.0.1:9400/contact/">Contact</a></li>
+</ul>			<div class="nav__mobile-pied">
+				<a class="bouton bouton--rouge bouton--large" href="http://127.0.0.1:9400/billetterie/"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"/></svg> Billetterie</a>
+				<div class="nav__actions">
+					<a class="bouton bouton--blanc" href="http://127.0.0.1:9400/boutique/"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6h-2a4 4 0 0 0-8 0H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-6-2a2 2 0 0 1 2 2h-4a2 2 0 0 1 2-2zm6 16H6V8h2v2a1 1 0 0 0 2 0V8h4v2a1 1 0 0 0 2 0V8h2v12z"/></svg> Boutique</a>
+					<a class="bouton bouton--contour" href="http://127.0.0.1:9400/devenir-partenaire/">Devenir partenaire</a>
+				</div>
+				<p class="nav__suivez">Suivez le HVB</p>
+				<ul class="reseaux"><li><a href="https://www.facebook.com/harnes.volleyball62" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v10h4V14h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg></a></li><li><a href="https://www.instagram.com/harnesvb" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3s0 2.4-.1 3.3c-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 13.1 5.3 12.9 5.3 12s0-2.4.1-3.3C5.5 6.5 6.5 5.5 8.7 5.4 9.6 4 9.8 4 12 4zm0-1.7c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8 3.7 8.3 3.7 12s0 2.6.1 3.4c.1 3 1.8 4.6 4.8 4.8.8 0 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8 0-.8.1-1.1.1-3.4s0-2.6-.1-3.4c-.1-3-1.8-4.6-4.8-4.8-.8-.1-1.1-.1-3.4-.1z"/></svg></a></li><li><a href="https://x.com/harnesvb" target="_blank" rel="noopener" aria-label="X"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.6h-6.3l-4.9-6.4-5.6 6.4H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.5h1.7L7.4 4.7H5.6l11.1 14.8z"/></svg></a></li><li><a href="https://www.youtube.com/c/hvbtv" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li><li><a href="https://www.tiktok.com/@hvb.and.co" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.8a5.7 5.7 0 1 0 4.9 5.6V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg></a></li><li><a href="https://www.linkedin.com/in/harnes-volley-ball-ab2b63164/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 21H3.3V9.2h3.6V21zM5.1 7.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM21 21h-3.6v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9.7V9.2h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5V21z"/></svg></a></li></ul>			</div>
+		</nav>
+
+		<div class="entete__actions">
+			<a class="bouton bouton--contour entete__boutique" href="http://127.0.0.1:9400/boutique/" aria-label="Boutique">
+				<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6h-2a4 4 0 0 0-8 0H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-6-2a2 2 0 0 1 2 2h-4a2 2 0 0 1 2-2zm6 16H6V8h2v2a1 1 0 0 0 2 0V8h4v2a1 1 0 0 0 2 0V8h2v12z"/></svg> <span>Boutique</span>
+			</a>
+			<a class="bouton bouton--rouge entete__billetterie" href="http://127.0.0.1:9400/billetterie/" aria-label="Billetterie">
+				<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"/></svg> <span>Billetterie</span>
+			</a>
+			<button class="burger" id="burger" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<main id="contenu">
+
+<section class="acc-hero" data-carrousel-une aria-roledescription="carrousel" aria-label="À la une">
+	<h1 class="visuellement-cache">Harnes Volley-Ball : club de volley à Harnes (Pas-de-Calais)</h1>
+	<div class="acc-hero__diapos" aria-live="off">
+					<article class="acc-diapo is-active" role="group" aria-roledescription="diapositive" aria-label="1 sur 5 : Prochain match">
+				<img width="1920" height="1280" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/salle-marechal-min-scaled-1.jpg" class="acc-hero__image" alt="La Salle Régionale Maréchal pleine un soir de match" sizes="100vw" loading="eager" fetchpriority="high" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/salle-marechal-min-scaled-1.jpg 1920w, http://127.0.0.1:9400/wp-content/uploads/2026/10/salle-marechal-min-scaled-1-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/salle-marechal-min-scaled-1-1024x683.jpg 1024w" />				<div class="acc-hero__texte">
+					<p class="acc-hero__etiquette">Volstar Masculine 2 · J4 · Extérieur</p>
+					<p class="acc-hero__titre">Prochain match</p>
+					<p class="acc-hero__match">Cambrai vs Harnes le samedi 31 octobre 2026 à 19h</p>
+											<div class="compte acc-hero__compte" data-compte="2026-10-31T19:00:00">
+							<div><strong data-j>--</strong><span>jours</span></div>
+							<div><strong data-h>--</strong><span>heures</span></div>
+							<div><strong data-m>--</strong><span>min</span></div>
+							<div><strong data-s>--</strong><span>sec</span></div>
+						</div>
+										<div class="acc-hero__boutons">
+													<a class="bouton bouton--rouge" href="https://www.lnvtv.com/" target="_blank" rel="noopener">Suivre le match sur LNV TV</a>
+													<a class="bouton bouton--contour" href="http://127.0.0.1:9400/calendrier-resultats/">Calendrier et résultats</a>
+											</div>
+				</div>
+			</article>
+					<article class="acc-diapo" role="group" aria-roledescription="diapositive" aria-label="2 sur 5 : Abonnement" aria-hidden="true" inert>
+				<img width="1800" height="1201" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027.jpg" class="acc-hero__image" alt="L&#039;équipe Volstar Masculine 2 du Harnes Volley-Ball, saison 2026-2027" sizes="auto, 100vw" loading="lazy" fetchpriority="auto" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027.jpg 1800w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1024x683.jpg 1024w" />				<div class="acc-hero__texte">
+					<p class="acc-hero__etiquette">Saison 2026-2027</p>
+					<p class="acc-hero__titre">Abonnement</p>
+					<p class="acc-hero__match">Tous les matchs de championnat à domicile à la Salle Régionale Maréchal, au plus près de l&#039;équipe.</p>
+										<div class="acc-hero__boutons">
+													<a class="bouton bouton--rouge" href="https://www.billetweb.fr/pro/harnesvolleyball">Prendre mon abonnement</a>
+											</div>
+				</div>
+			</article>
+					<article class="acc-diapo" role="group" aria-roledescription="diapositive" aria-label="3 sur 5 : Devenez partenaire" aria-hidden="true" inert>
+				<img width="1800" height="1200" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/champions2025.jpg" class="acc-hero__image" alt="Les joueurs du Harnes Volley-Ball fêtent le titre de champion de France Elite 2025" sizes="auto, 100vw" loading="lazy" fetchpriority="auto" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/champions2025.jpg 1800w, http://127.0.0.1:9400/wp-content/uploads/2026/10/champions2025-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/champions2025-1024x683.jpg 1024w" />				<div class="acc-hero__texte">
+					<p class="acc-hero__etiquette">Entreprises</p>
+					<p class="acc-hero__titre">Devenez partenaire</p>
+					<p class="acc-hero__match">Associez votre entreprise au HVB : visibilité, salon VIP les soirs de match et réseau du Business Club.</p>
+										<div class="acc-hero__boutons">
+													<a class="bouton bouton--rouge" href="http://127.0.0.1:9400/devenir-partenaire/">Découvrir les packs</a>
+											</div>
+				</div>
+			</article>
+					<article class="acc-diapo" role="group" aria-roledescription="diapositive" aria-label="4 sur 5 : Section féminine" aria-hidden="true" inert>
+				<img width="1374" height="1330" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/feminine-1.jpg" class="acc-hero__image" alt="L&#039;équipe de la section féminine du HVB en tenue noire et rose, salle Maréchal" sizes="auto, 100vw" loading="lazy" fetchpriority="auto" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/feminine-1.jpg 1374w, http://127.0.0.1:9400/wp-content/uploads/2026/10/feminine-1-300x290.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/feminine-1-1024x991.jpg 1024w" />				<div class="acc-hero__texte">
+					<p class="acc-hero__etiquette">Nouveau au HVB</p>
+					<p class="acc-hero__titre">Section féminine</p>
+					<p class="acc-hero__match">Le volley loisir au féminin, porté par d&#039;anciennes joueuses de haut niveau. Venez faire un essai !</p>
+										<div class="acc-hero__boutons">
+													<a class="bouton bouton--rouge" href="http://127.0.0.1:9400/section-feminine/">Découvrir la section</a>
+											</div>
+				</div>
+			</article>
+					<article class="acc-diapo" role="group" aria-roledescription="diapositive" aria-label="5 sur 5 : École de volley" aria-hidden="true" inert>
+				<img width="1620" height="1080" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_9476.webp" class="acc-hero__image" alt="Les jeunes de l&#039;école de volley du HVB à l&#039;entraînement" sizes="auto, 100vw" loading="lazy" fetchpriority="auto" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_9476.webp 1620w, http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_9476-300x200.webp 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_9476-1024x683.webp 1024w" />				<div class="acc-hero__texte">
+					<p class="acc-hero__etiquette">7-11 ans</p>
+					<p class="acc-hero__titre">École de volley</p>
+					<p class="acc-hero__match">Apprendre les gestes, jouer des tournois et progresser en s&#039;amusant, le mercredi et le samedi à Harnes.</p>
+										<div class="acc-hero__boutons">
+													<a class="bouton bouton--rouge" href="http://127.0.0.1:9400/ecole-de-volley/">Découvrir l&#039;école de volley</a>
+													<a class="bouton bouton--contour" href="http://127.0.0.1:9400/inscription/">Inscription</a>
+											</div>
+				</div>
+			</article>
+			</div>
+			<button type="button" class="acc-hero__fleche acc-hero__fleche--prec" data-une-prec aria-label="Diapositive précédente"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4L14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+		<button type="button" class="acc-hero__fleche acc-hero__fleche--suiv" data-une-suiv aria-label="Diapositive suivante"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 7.4L10 6l6 6-6 6-1.4-1.4 4.6-4.6z"/></svg></button>
+		<div class="acc-hero__points" role="group" aria-label="Choisir la diapositive">
+							<button type="button" data-diapo="0" aria-label="Prochain match" aria-current="true"></button>
+							<button type="button" data-diapo="1" aria-label="Abonnement"></button>
+							<button type="button" data-diapo="2" aria-label="Devenez partenaire"></button>
+							<button type="button" data-diapo="3" aria-label="Section féminine"></button>
+							<button type="button" data-diapo="4" aria-label="École de volley"></button>
+					</div>
+		<a class="acc-hero__suite" href="#accueil-suite" aria-label="Découvrir la suite"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16.5l-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4z"/></svg></a>
+</section>
+
+<div class="acc-direct">	<section class="direct" data-direct hidden
+		data-url="https://xuqnajwjigknnrwtmwmw.supabase.co"
+		data-cle="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh1cW5handqaWdrbm5yd3Rtd213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMwNDM3NDIsImV4cCI6MjEwODYxOTc0Mn0.2aoXG_ZH4Pr_ePQlNKJziJDy3cKhd72zUBDzAdRJn08"
+		data-prochain="0"
+		data-blasons="{&quot;Harnes VB&quot;:&quot;&lt;img class=\&quot;blason\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/themes\/harnes-vb\/assets\/img\/logo-hvb.png\&quot; alt=\&quot;\&quot;&gt;&quot;,&quot;Grand Nancy&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-719.png\&quot; alt=\&quot;Logo Grand Nancy\&quot;&gt;&quot;,&quot;Martigues&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-721.png\&quot; alt=\&quot;Logo Martigues\&quot;&gt;&quot;,&quot;Fr\u00e9jus&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-715.png\&quot; alt=\&quot;Logo Fr\u00e9jus\&quot;&gt;&quot;,&quot;Cambrai&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-717.png\&quot; alt=\&quot;Logo Cambrai\&quot;&gt;&quot;,&quot;Saint-Quentin&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-724.png\&quot; alt=\&quot;Logo Saint-Quentin\&quot;&gt;&quot;,&quot;Chalon-sur-Sa\u00f4ne&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-739.png\&quot; alt=\&quot;Logo Chalon-sur-Sa\u00f4ne\&quot;&gt;&quot;,&quot;Reims&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-722.png\&quot; alt=\&quot;Logo Reims\&quot;&gt;&quot;,&quot;France Avenir 2024&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-716.png\&quot; alt=\&quot;Logo France Avenir 2024\&quot;&gt;&quot;,&quot;Rennes&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-723.png\&quot; alt=\&quot;Logo Rennes\&quot;&gt;&quot;,&quot;Ajaccio&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-718.png\&quot; alt=\&quot;Logo Ajaccio\&quot;&gt;&quot;,&quot;Saint-Jean-d&#039;Illac&quot;:&quot;&lt;img class=\&quot;blason blason--club\&quot; src=\&quot;http:\/\/127.0.0.1:9400\/wp-content\/uploads\/hvb-logos\/equipe-714.png\&quot; alt=\&quot;Logo Saint-Jean-d&#039;Illac\&quot;&gt;&quot;}"
+		aria-label="Score en direct">
+		<div class="score-match direct__tableau" aria-live="polite">
+			<p class="direct__etat"><span data-etat></span><span data-rencontre></span></p>
+			<div class="score-match__equipes">
+				<div class="score-match__equipe" data-equipe="0"></div>
+				<div class="score-match__score" data-score></div>
+				<div class="score-match__equipe" data-equipe="1"></div>
+			</div>
+			<ol class="score-match__sets" data-sets></ol>
+			<p class="score-match__infos" data-infos></p>
+			<div class="direct__appli">
+				<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/appli-icone.png" alt="" width="44" height="44">
+				<p>Suivez le match et votez pour le MVP dans l'appli <strong>Harnes Volleyball</strong>
+											<span class="direct__stores"><a href="http://127.0.0.1:9400/application/">Bientôt sur iPhone et Android</a></span>
+									</p>
+			</div>
+		</div>
+	</section>
+	</div>
+
+<section class="acc-vibrer" id="accueil-suite">
+	<div class="conteneur">
+		<h2 class="acc-titre">Venez vibrer avec le HVB</h2>
+		<div class="acc-vibrer__boite">
+			<div class="bh-entete">
+				<h3 class="bh-titre">Matchs à domicile</h3>
+				<a class="lien-fleche" href="http://127.0.0.1:9400/billetterie/">Toute la billetterie <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+			</div>
+											<article class="bh-billet">
+					<div class="bh-billet__souche">
+						<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt=""><span>vs</span><img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-719.png" alt="Logo Grand Nancy">					</div>
+					<div class="bh-billet__corps">
+						<h4 class="bh-billet__titre">Harnes <i></i> Grand Nancy</h4>
+						<p class="bh-billet__competition">Coupe de France</p>
+						<p class="bh-billet__pastilles"><span>Mardi 3 novembre · 20h</span><span>Salle Maréchal</span></p>
+					</div>
+					<div class="bh-billet__actions">
+													<a class="bouton bouton--rouge" href="https://www.billetweb.fr/coupe-de-france-hvb-vs-grand-nancy">Réserver</a>
+							<a class="bh-billet__offres-lien" href="http://127.0.0.1:9400/billetterie/">Voir les offres</a>
+											</div>
+				</article>
+											<article class="bh-billet bh-billet--bientot">
+					<div class="bh-billet__souche">
+						<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt=""><span>vs</span><img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-739.png" alt="Logo Chalon-sur-Saône">					</div>
+					<div class="bh-billet__corps">
+						<h4 class="bh-billet__titre">Harnes <i></i> Chalon-sur-Saône</h4>
+						<p class="bh-billet__competition">Volstar Masculine 2 · J6</p>
+						<p class="bh-billet__pastilles"><span>Samedi 14 novembre · 20h</span><span>Salle Maréchal</span></p>
+					</div>
+					<div class="bh-billet__actions">
+													<span class="bh-billet__bientot">Bientôt en vente</span>
+											</div>
+				</article>
+											<article class="bh-billet bh-billet--bientot">
+					<div class="bh-billet__souche">
+						<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt=""><span>vs</span><img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-716.png" alt="Logo France Avenir 2024">					</div>
+					<div class="bh-billet__corps">
+						<h4 class="bh-billet__titre">Harnes <i></i> France Avenir 2024</h4>
+						<p class="bh-billet__competition">Volstar Masculine 2 · J8</p>
+						<p class="bh-billet__pastilles"><span>Vendredi 27 novembre · 20h</span><span>Salle Maréchal</span></p>
+					</div>
+					<div class="bh-billet__actions">
+													<span class="bh-billet__bientot">Bientôt en vente</span>
+											</div>
+				</article>
+								</div>
+	</div>
+</section>
+
+<section class="acc-scores">
+	<div class="conteneur">
+		<h2 class="acc-titre">Scores et classement saison 2026-2027</h2>
+		<div class="acc-scores__grille">
+			<div class="acc-carte">
+				<h3 class="acc-carte__titre">Journées</h3>
+				<ul class="acc-journees">
+																	<li class="acc-journee acc-journee--jouee">
+							<p class="acc-journee__info"><span>Volstar Masculine 2 · J1</span><span>17/10/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Harnes VB</span>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<strong class="acc-journee__score">Forfait</strong>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-719.png" alt="Logo Grand Nancy">								<span class="acc-journee__equipe">Grand Nancy</span>
+							</p>
+						</li>
+																	<li class="acc-journee acc-journee--jouee">
+							<p class="acc-journee__info"><span>Volstar Masculine 2 · J2</span><span>20/10/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Martigues</span>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-721.png" alt="Logo Martigues">								<strong class="acc-journee__score">Forfait</strong>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<span class="acc-journee__equipe">Harnes VB</span>
+							</p>
+						</li>
+																	<li class="acc-journee acc-journee--jouee">
+							<p class="acc-journee__info"><span>Volstar Masculine 2 · J3</span><span>23/10/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Harnes VB</span>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<strong class="acc-journee__score">0 - 3</strong>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-715.png" alt="Logo Fréjus">								<span class="acc-journee__equipe">Fréjus</span>
+							</p>
+						</li>
+																	<li class="acc-journee">
+							<p class="acc-journee__info"><span>Volstar Masculine 2 · J4</span><span>31/10/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Cambrai</span>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-717.png" alt="Logo Cambrai">								<strong class="acc-journee__score">19h00</strong>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<span class="acc-journee__equipe">Harnes VB</span>
+							</p>
+						</li>
+																	<li class="acc-journee">
+							<p class="acc-journee__info"><span>Coupe de France</span><span>03/11/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Harnes VB</span>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<strong class="acc-journee__score">20h00</strong>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-719.png" alt="Logo Grand Nancy">								<span class="acc-journee__equipe">Grand Nancy</span>
+							</p>
+						</li>
+																	<li class="acc-journee">
+							<p class="acc-journee__info"><span>Volstar Masculine 2 · J5</span><span>07/11/2026</span></p>
+							<p class="acc-journee__match">
+								<span class="acc-journee__equipe">Saint-Quentin</span>
+								<img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-724.png" alt="Logo Saint-Quentin">								<strong class="acc-journee__score">19h30</strong>
+								<img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="">								<span class="acc-journee__equipe">Harnes VB</span>
+							</p>
+						</li>
+									</ul>
+				<a class="lien-fleche" href="http://127.0.0.1:9400/calendrier-resultats/">Calendrier et résultats <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+			</div>
+			<div class="acc-carte">
+				<div class="carte__entete">
+					<h3 class="acc-carte__titre">Classement</h3>
+					<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/volstar-m2.png" alt="Volstar Masculine 2" width="48" height="46">
+				</div>
+				<div class="classement"><table class="cl cl--compact"><thead><tr><th class="cl__rang">#</th><th class="cl__equipe">Équipe</th><th class="cl__points">Pts</th><th title="Matchs joués">J</th><th title="Gagnés">G</th><th title="Perdus">P</th></tr></thead><tbody>	<tr class="">
+		<td class="cl__rang"><span>1</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-715.png" alt="Logo Fréjus" width="40" height="40" loading="lazy">			<span class="cl__nom">Fréjus</span>
+					</div></td>
+		<td class="cl__points">10</td>
+		<td>4</td>
+		<td>3</td>
+		<td>1</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>2</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-721.png" alt="Logo Martigues" width="40" height="40" loading="lazy">			<span class="cl__nom">Martigues</span>
+					</div></td>
+		<td class="cl__points">9</td>
+		<td>4</td>
+		<td>3</td>
+		<td>1</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>3</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-723.png" alt="Logo Rennes" width="40" height="40" loading="lazy">			<span class="cl__nom">Rennes</span>
+					</div></td>
+		<td class="cl__points">9</td>
+		<td>4</td>
+		<td>3</td>
+		<td>1</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>4</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-724.png" alt="Logo Saint-Quentin" width="40" height="40" loading="lazy">			<span class="cl__nom">Saint-Quentin</span>
+					</div></td>
+		<td class="cl__points">8</td>
+		<td>4</td>
+		<td>3</td>
+		<td>1</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>5</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-722.png" alt="Logo Reims" width="40" height="40" loading="lazy">			<span class="cl__nom">Reims</span>
+					</div></td>
+		<td class="cl__points">8</td>
+		<td>4</td>
+		<td>3</td>
+		<td>1</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>6</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-719.png" alt="Logo Grand Nancy" width="40" height="40" loading="lazy">			<span class="cl__nom">Grand Nancy</span>
+					</div></td>
+		<td class="cl__points">7</td>
+		<td>4</td>
+		<td>2</td>
+		<td>2</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>7</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-714.png" alt="Logo Saint-Jean-d&#039;Illac" width="40" height="40" loading="lazy">			<span class="cl__nom">Saint-Jean-d&#039;Illac</span>
+					</div></td>
+		<td class="cl__points">7</td>
+		<td>4</td>
+		<td>2</td>
+		<td>2</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>8</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-718.png" alt="Logo Ajaccio" width="40" height="40" loading="lazy">			<span class="cl__nom">Ajaccio</span>
+					</div></td>
+		<td class="cl__points">5</td>
+		<td>4</td>
+		<td>2</td>
+		<td>2</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>9</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-739.png" alt="Logo Chalon-sur-Saône" width="40" height="40" loading="lazy">			<span class="cl__nom">Chalon-sur-Saône</span>
+					</div></td>
+		<td class="cl__points">5</td>
+		<td>4</td>
+		<td>2</td>
+		<td>2</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>10</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-717.png" alt="Logo Cambrai" width="40" height="40" loading="lazy">			<span class="cl__nom">Cambrai</span>
+					</div></td>
+		<td class="cl__points">2</td>
+		<td>4</td>
+		<td>0</td>
+		<td>4</td>
+			</tr>
+		<tr class="">
+		<td class="cl__rang"><span>11</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-716.png" alt="Logo France Avenir 2024" width="40" height="40" loading="lazy">			<span class="cl__nom">France Avenir 2024</span>
+					</div></td>
+		<td class="cl__points">0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>4</td>
+			</tr>
+		<tr class="is-hvb">
+		<td class="cl__rang"><span>12</span></td>
+		<td class="cl__equipe"><div class="cl__club">
+			<img src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-720.png" alt="Logo Harnes" width="40" height="40" loading="lazy">			<span class="cl__nom">Harnes</span>
+			<span class="cl__penalite" title="Pénalité de points appliquée par la LNV">-6 pts</span>		</div></td>
+		<td class="cl__points">-4</td>
+		<td>4</td>
+		<td>1</td>
+		<td>3</td>
+			</tr>
+	</tbody></table></div>
+				<a class="lien-fleche" href="http://127.0.0.1:9400/classement/">Classement complet <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="actus-une" aria-label="Actualités">
+		<div class="carrousel" data-carrousel>
+							<article class="carrousel__diapo is-active">
+					<a class="carrousel__visuel" href="http://127.0.0.1:9400/mardi-3-novembre-le-hvb-recoit-grand-nancy-en-coupe-de-france/" tabindex="-1" aria-hidden="true">
+						<img width="1024" height="683" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1024x683.jpg" class="carrousel__image wp-post-image" alt="Mardi 3 novembre, le HVB reçoit Grand Nancy en Coupe de France" loading="lazy" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1024x683.jpg 1024w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027.jpg 1800w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />					</a>
+					<div class="carrousel__texte">
+						<p class="surtitre">Volstar Masculine 2 · 24 octobre 2026</p>
+						<h2 class="carrousel__titre"><a href="http://127.0.0.1:9400/mardi-3-novembre-le-hvb-recoit-grand-nancy-en-coupe-de-france/">Mardi 3 novembre, le HVB reçoit Grand Nancy en Coupe de France</a></h2>
+						<p class="carrousel__extrait">Rendez-vous mardi 3 novembre à 20h à la salle Régionale Maréchal : le Harnes Volley-Ball reçoit Grand Nancy en Coupe de France.…</p>
+						<a class="bouton bouton--rouge carrousel__bouton" href="http://127.0.0.1:9400/mardi-3-novembre-le-hvb-recoit-grand-nancy-en-coupe-de-france/">Lire l'article <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+					</div>
+				</article>
+							<article class="carrousel__diapo">
+					<a class="carrousel__visuel" href="http://127.0.0.1:9400/defaite-0-3-face-a-frejus/" tabindex="-1" aria-hidden="true">
+						<img width="1024" height="683" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1024x683.jpg" class="carrousel__image wp-post-image" alt="Défaite 0-3 face à Fréjus" loading="lazy" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-1024x683.jpg 1024w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/equipe-2026-2027.jpg 1800w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />					</a>
+					<div class="carrousel__texte">
+						<p class="surtitre">Volstar Masculine 2 · 24 octobre 2026</p>
+						<h2 class="carrousel__titre"><a href="http://127.0.0.1:9400/defaite-0-3-face-a-frejus/">Défaite 0-3 face à Fréjus</a></h2>
+						<p class="carrousel__extrait">Le Harnes Volley-Ball s&#039;est incliné 0 sets à 3 face à Fréjus, ce vendredi 23 octobre à la salle Régionale Maréchal, pour…</p>
+						<a class="bouton bouton--rouge carrousel__bouton" href="http://127.0.0.1:9400/defaite-0-3-face-a-frejus/">Lire l'article <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+					</div>
+				</article>
+							<article class="carrousel__diapo">
+					<a class="carrousel__visuel" href="http://127.0.0.1:9400/antonin-rouzier-nouveau-manager-general/" tabindex="-1" aria-hidden="true">
+						<img width="1024" height="682" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-antonin-rouzier-1024x682.jpg" class="carrousel__image wp-post-image" alt="Antonin Rouzier, nouveau manager général du HVB" loading="lazy" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-antonin-rouzier-1024x682.jpg 1024w, http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-antonin-rouzier-300x200.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-antonin-rouzier.jpg 2000w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />					</a>
+					<div class="carrousel__texte">
+						<p class="surtitre">Vie du Club · 21 octobre 2026</p>
+						<h2 class="carrousel__titre"><a href="http://127.0.0.1:9400/antonin-rouzier-nouveau-manager-general/">Antonin Rouzier, nouveau manager général du HVB</a></h2>
+						<p class="carrousel__extrait">Ancien international français, Antonin Rouzier prend les rênes du club pour l&#039;aventure Volstar M2.</p>
+						<a class="bouton bouton--rouge carrousel__bouton" href="http://127.0.0.1:9400/antonin-rouzier-nouveau-manager-general/">Lire l'article <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+					</div>
+				</article>
+							<article class="carrousel__diapo">
+					<a class="carrousel__visuel" href="http://127.0.0.1:9400/toyota-a-l-honneur-pour-la-reception-de-frejus/" tabindex="-1" aria-hidden="true">
+						<img width="1024" height="576" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-toyota-fg-1024x576.jpg" class="carrousel__image wp-post-image" alt="Toyota à l&rsquo;honneur pour la réception de Fréjus" loading="lazy" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-toyota-fg-1024x576.jpg 1024w, http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-toyota-fg-300x169.jpg 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/actu-toyota-fg.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />					</a>
+					<div class="carrousel__texte">
+						<p class="surtitre">Vie du Club · 21 octobre 2026</p>
+						<h2 class="carrousel__titre"><a href="http://127.0.0.1:9400/toyota-a-l-honneur-pour-la-reception-de-frejus/">Toyota à l&rsquo;honneur pour la réception de Fréjus</a></h2>
+						<p class="carrousel__extrait">Vendredi 23 octobre, le Groupe FG Automobiles présente les nouveaux modèles Toyota tout autour de la salle Maréchal.</p>
+						<a class="bouton bouton--rouge carrousel__bouton" href="http://127.0.0.1:9400/toyota-a-l-honneur-pour-la-reception-de-frejus/">Lire l'article <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+					</div>
+				</article>
+							<article class="carrousel__diapo">
+					<a class="carrousel__visuel" href="http://127.0.0.1:9400/les-loisirs-soutiennent-octobre-en-rose/" tabindex="-1" aria-hidden="true">
+						<img width="1024" height="683" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_1434-1024x683.webp" class="carrousel__image wp-post-image" alt="Les loisirs soutiennent octobre en rose !" loading="lazy" decoding="async" srcset="http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_1434-1024x683.webp 1024w, http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_1434-300x200.webp 300w, http://127.0.0.1:9400/wp-content/uploads/2026/10/IMG_1434.webp 1620w" sizes="auto, (max-width: 1024px) 100vw, 1024px" />					</a>
+					<div class="carrousel__texte">
+						<p class="surtitre">Elite · 15 octobre 2025</p>
+						<h2 class="carrousel__titre"><a href="http://127.0.0.1:9400/les-loisirs-soutiennent-octobre-en-rose/">Les loisirs soutiennent octobre en rose !</a></h2>
+						<p class="carrousel__extrait">Les équipes loisirs du HVB se mobilisent pour Octobre rose et la lutte contre le cancer du sein.</p>
+						<a class="bouton bouton--rouge carrousel__bouton" href="http://127.0.0.1:9400/les-loisirs-soutiennent-octobre-en-rose/">Lire l'article <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a>
+					</div>
+				</article>
+						<button class="carrousel__fleche carrousel__fleche--prec" data-prec aria-label="Actualité précédente"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4L14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+			<button class="carrousel__fleche carrousel__fleche--suiv" data-suiv aria-label="Actualité suivante"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 7.4L10 6l6 6-6 6-1.4-1.4 4.6-4.6z"/></svg></button>
+			<div class="carrousel__points" data-points></div>
+		</div>
+	</section>
+
+	<section class="actions-cles" aria-label="Boutique et partenariat">
+					<a class="action-cle action-cle--merch" href="http://127.0.0.1:9400/boutique/">
+				<img class="action-cle__photo" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/mediaday-3-819x1024.jpg" alt="Joueurs du HVB présentant les maillots officiels 2026-2027" loading="lazy">
+				<span class="action-cle__texte">
+					<span class="surtitre">Boutique officielle</span>
+					<span class="action-cle__titre">Porte les couleurs <em>du HVB</em></span>
+					<span class="action-cle__desc">Les maillots officiels 2026-2027, en vente au stand du club à chaque match à domicile.</span>
+					<span class="bouton bouton--rouge action-cle__bouton">Découvrir la boutique <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></span>
+				</span>
+			</a>
+					<a class="action-cle action-cle--partenariat" href="http://127.0.0.1:9400/devenir-partenaire/#packs">
+				<img class="action-cle__photo" src="http://127.0.0.1:9400/wp-content/uploads/2026/10/champions2025-1024x683.jpg" alt="Les joueurs du Harnes Volley-Ball célèbrent le titre de champion de France Elite 2025" loading="lazy">
+				<span class="action-cle__texte">
+					<span class="surtitre">Entreprises</span>
+					<span class="action-cle__titre">Devenez <em>partenaire</em></span>
+					<span class="action-cle__desc">Quatre packs dès 3 000 €, soit 1 740 € après avantage fiscal. Visibilité, salon VIP et réseau du Business Club.</span>
+					<span class="bouton bouton--rouge action-cle__bouton">Découvrir les packs <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3l-1.4 1.4 4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></span>
+				</span>
+			</a>
+			</section>
+	
+<section class="acc-lnvtv">
+	<div class="conteneur">
+		<a class="acc-lnvtv__bandeau" href="https://www.lnvtv.com/" target="_blank" rel="noopener" aria-label="Regarder les matchs du HVB sur LNV TV">
+			<img class="acc-lnvtv__joueur acc-lnvtv__joueur--gauche" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/joueurs/joueur-12.webp" alt="" loading="lazy">
+			<span class="acc-lnvtv__texte">
+				<span class="acc-lnvtv__surtitre">Volstar Masculine 2 · Saison 2026-2027</span>
+				<strong class="acc-lnvtv__titre">100 % des matchs</strong>
+				<span class="acc-lnvtv__soustitre">en direct et en replay sur</span>
+				<img class="acc-lnvtv__logo" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/lnv-tv.png" alt="LNV TV" width="230" height="90" loading="lazy">
+				<span class="bouton bouton--rouge acc-lnvtv__bouton">Regarder sur LNV TV</span>
+			</span>
+			<img class="acc-lnvtv__joueur acc-lnvtv__joueur--droite" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/joueurs/joueur-60.webp" alt="" loading="lazy">
+		</a>
+	</div>
+</section>
+
+<section class="suivez">
+	<div class="conteneur">
+		<p class="surtitre">#TEAMOBUS</p>
+		<h2 class="suivez__titre">Suivez le HVB</h2>
+		<ul class="suivez__liste">
+							<li>
+					<a class="suivez__lien suivez__lien--facebook" href="https://www.facebook.com/harnes.volleyball62" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v10h4V14h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg>						<strong>Facebook</strong>
+						<span>harnes.volleyball62</span>
+					</a>
+				</li>
+							<li>
+					<a class="suivez__lien suivez__lien--instagram" href="https://www.instagram.com/harnesvb" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3s0 2.4-.1 3.3c-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 13.1 5.3 12.9 5.3 12s0-2.4.1-3.3C5.5 6.5 6.5 5.5 8.7 5.4 9.6 4 9.8 4 12 4zm0-1.7c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8 3.7 8.3 3.7 12s0 2.6.1 3.4c.1 3 1.8 4.6 4.8 4.8.8 0 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8 0-.8.1-1.1.1-3.4s0-2.6-.1-3.4c-.1-3-1.8-4.6-4.8-4.8-.8-.1-1.1-.1-3.4-.1z"/></svg>						<strong>Instagram</strong>
+						<span>@harnesvb</span>
+					</a>
+				</li>
+							<li>
+					<a class="suivez__lien suivez__lien--x" href="https://x.com/harnesvb" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.6h-6.3l-4.9-6.4-5.6 6.4H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.5h1.7L7.4 4.7H5.6l11.1 14.8z"/></svg>						<strong>X</strong>
+						<span>@harnesvb</span>
+					</a>
+				</li>
+							<li>
+					<a class="suivez__lien suivez__lien--youtube" href="https://www.youtube.com/c/hvbtv" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>						<strong>YouTube</strong>
+						<span>HVB TV</span>
+					</a>
+				</li>
+							<li>
+					<a class="suivez__lien suivez__lien--tiktok" href="https://www.tiktok.com/@hvb.and.co" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.8a5.7 5.7 0 1 0 4.9 5.6V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg>						<strong>TikTok</strong>
+						<span>@hvb.and.co</span>
+					</a>
+				</li>
+							<li>
+					<a class="suivez__lien suivez__lien--linkedin" href="https://www.linkedin.com/in/harnes-volley-ball-ab2b63164/" target="_blank" rel="noopener">
+						<svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 21H3.3V9.2h3.6V21zM5.1 7.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM21 21h-3.6v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9.7V9.2h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5V21z"/></svg>						<strong>LinkedIn</strong>
+						<span>Harnes Volley-Ball</span>
+					</a>
+				</li>
+					</ul>
+	</div>
+</section>
+
+</main>
+
+
+
+	<section class="partenaires" aria-label="Nos partenaires">
+		<div class="partenaires__piste">
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-ville-harnes.png" alt="VILLE DE HARNES" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-call.png" alt="COMMUNAUTé d&#x27;agglomération de lens-liévin" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-pas-de-calais.png" alt="PAS-DE-CALAIS Département" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-region-hdf.png" alt="région Hauts-de-France" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-toyota-fg.png" alt="Toyota · Groupe FG Automobiles" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-tout-et-bon.png" alt="Tout &amp; Bon" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-neoctis.png" alt="Neoctis" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-silice.png" alt="Silice Conseil" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-hsi.png" alt="HSI · Hako Siphoïde Installation" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-goodinov.png" alt="Goodinov" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-bdl.png" alt="BDL Expertise-comptable" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-farprom.png" alt="Farprom Partenaires" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-swiss-life.png" alt="Swiss Life · Agence Masson Kubasik" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-burger-king.png" alt="Burger King" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-forma-eltech.png" alt="Forma Eltech" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-apriba.png" alt="Apriba" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-petit-grandeur.png" alt="Chocolaterie Petit Grandeur" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-baudin-chateauneuf.png" alt="Baudin Châteauneuf" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-leclerc-loison.png" alt="E.Leclerc Loison-sous-Lens" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-paprec.png" alt="Paprec" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/2024_LOGO-ACTUAL_-ROUGE_.png" alt="Actual" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/images.jpg" alt="Club 100" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/MirouxMGCP.png" alt="Groupe Miroux · MGCP" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/GarageDelannoyHanquez.jpg" alt="Garage Delannoy-Hanquez · Renault" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/VoyagesMullie.jpeg" alt="Voyages Mullie" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/GroupeNGE.png" alt="Guintoli · Groupe NGE" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/Capture-decran-2026-01-19-151632.png" alt="Atherm&#x27;Energies" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-ville-harnes.png" alt="VILLE DE HARNES" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-call.png" alt="COMMUNAUTé d&#x27;agglomération de lens-liévin" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-pas-de-calais.png" alt="PAS-DE-CALAIS Département" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-publics/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-region-hdf.png" alt="région Hauts-de-France" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-toyota-fg.png" alt="Toyota · Groupe FG Automobiles" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-tout-et-bon.png" alt="Tout &amp; Bon" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-neoctis.png" alt="Neoctis" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-silice.png" alt="Silice Conseil" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/logo-hsi.png" alt="HSI · Hako Siphoïde Installation" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-goodinov.png" alt="Goodinov" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-bdl.png" alt="BDL Expertise-comptable" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-farprom.png" alt="Farprom Partenaires" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-swiss-life.png" alt="Swiss Life · Agence Masson Kubasik" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-burger-king.png" alt="Burger King" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-forma-eltech.png" alt="Forma Eltech" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-apriba.png" alt="Apriba" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-petit-grandeur.png" alt="Chocolaterie Petit Grandeur" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-baudin-chateauneuf.png" alt="Baudin Châteauneuf" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-leclerc-loison.png" alt="E.Leclerc Loison-sous-Lens" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/hd-paprec.png" alt="Paprec" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/2024_LOGO-ACTUAL_-ROUGE_.png" alt="Actual" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/images.jpg" alt="Club 100" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/MirouxMGCP.png" alt="Groupe Miroux · MGCP" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/GarageDelannoyHanquez.jpg" alt="Garage Delannoy-Hanquez · Renault" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/VoyagesMullie.jpeg" alt="Voyages Mullie" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/GroupeNGE.png" alt="Guintoli · Groupe NGE" loading="lazy">
+				</a>
+							<a class="partenaires__logo" href="http://127.0.0.1:9400/partenaires-prives/" aria-hidden="true" tabindex="-1">
+					<img src="http://127.0.0.1:9400/wp-content/uploads/2026/10/Capture-decran-2026-01-19-151632.png" alt="Atherm&#x27;Energies" loading="lazy">
+				</a>
+					</div>
+	</section>
+
+<footer class="pied">
+	<div class="conteneur pied__grille">
+		<div class="pied__club">
+			<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt="Harnes Volley-Ball" width="96" height="96" loading="lazy">
+			<p class="pied__devise">Ensemble vers les sommets !<br><strong>#TEAMOBUS</strong></p>
+		</div>
+		<div>
+			<h2 class="pied__titre">Nous trouver</h2>
+			<p class="pied__ligne"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> <span>Salle Régionale Maréchal<br>128 Chemin Valois, 62440 Harnes</span></p>
+			<p class="pied__ligne"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.5.6 3.6a1 1 0 0 1-.3 1z"/></svg> <a href="tel:0321186502">03 21 18 65 02</a></p>
+			<p class="pied__ligne"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg> <a href="mailto:contact@harnes-volleyball.fr">contact@harnes-volleyball.fr</a></p>
+		</div>
+		<div>
+			<h2 class="pied__titre">Le club</h2>
+			<ul id="menu-pied-de-page" class="pied__menu"><li id="menu-item-2498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2498"><a href="http://127.0.0.1:9400/presentation-du-club/">Présentation</a></li>
+<li id="menu-item-2499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2499"><a href="http://127.0.0.1:9400/effectif/">Effectif 2026-2027</a></li>
+<li id="menu-item-2500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2500"><a href="http://127.0.0.1:9400/calendrier-resultats/">Calendrier et résultats</a></li>
+<li id="menu-item-2501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2501"><a href="http://127.0.0.1:9400/billetterie/">Billetterie</a></li>
+<li id="menu-item-2502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2502"><a href="http://127.0.0.1:9400/inscription/">Inscription</a></li>
+<li id="menu-item-2503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2503"><a href="http://127.0.0.1:9400/devenir-partenaire/">Devenir partenaire</a></li>
+<li id="menu-item-2504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2504"><a href="http://127.0.0.1:9400/boutique/">Boutique</a></li>
+<li id="menu-item-2505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2505"><a href="http://127.0.0.1:9400/application/">L&rsquo;appli HVB Partenaires</a></li>
+<li id="menu-item-2506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2506"><a href="http://127.0.0.1:9400/actus/">Actualités</a></li>
+<li id="menu-item-2507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2507"><a href="http://127.0.0.1:9400/infrastructures/">Infrastructures</a></li>
+<li id="menu-item-2508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2508"><a href="http://127.0.0.1:9400/contact/">Contact</a></li>
+</ul>		</div>
+		<div>
+			<h2 class="pied__titre">Suivez le HVB</h2>
+			<ul class="reseaux"><li><a href="https://www.facebook.com/harnes.volleyball62" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v10h4V14h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg></a></li><li><a href="https://www.instagram.com/harnesvb" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3s0 2.4-.1 3.3c-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 13.1 5.3 12.9 5.3 12s0-2.4.1-3.3C5.5 6.5 6.5 5.5 8.7 5.4 9.6 4 9.8 4 12 4zm0-1.7c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8 3.7 8.3 3.7 12s0 2.6.1 3.4c.1 3 1.8 4.6 4.8 4.8.8 0 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8 0-.8.1-1.1.1-3.4s0-2.6-.1-3.4c-.1-3-1.8-4.6-4.8-4.8-.8-.1-1.1-.1-3.4-.1z"/></svg></a></li><li><a href="https://x.com/harnesvb" target="_blank" rel="noopener" aria-label="X"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.6h-6.3l-4.9-6.4-5.6 6.4H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.5h1.7L7.4 4.7H5.6l11.1 14.8z"/></svg></a></li><li><a href="https://www.youtube.com/c/hvbtv" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li><li><a href="https://www.tiktok.com/@hvb.and.co" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.8a5.7 5.7 0 1 0 4.9 5.6V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6z"/></svg></a></li><li><a href="https://www.linkedin.com/in/harnes-volley-ball-ab2b63164/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 21H3.3V9.2h3.6V21zM5.1 7.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM21 21h-3.6v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9.7V9.2h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5V21z"/></svg></a></li></ul>			<div class="pied__labels">
+				<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/ffvb-blanc.svg" alt="Fédération française de volley" loading="lazy">
+				<img src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/volstar-m2.png" alt="Volstar Masculine 2" loading="lazy">
+			</div>
+		</div>
+	</div>
+	<div class="pied__bas">
+		<div class="conteneur">
+			<span>© 2026 Harnes Volley-Ball</span>
+			<span class="pied__liens-legaux">
+				<a href="http://127.0.0.1:9400/mentions-legales/">Mentions légales</a>
+				<a href="http://127.0.0.1:9400/politique-de-confidentialite/">Confidentialité et cookies</a>
+				<a href="http://127.0.0.1:9400/conditions-generales-de-vente/">CGV</a>
+				<a href="http://127.0.0.1:9400/droit-de-retractation/">Droit de rétractation</a>
+				<a href="http://127.0.0.1:9400/confidentialite/">Confidentialité de l'appli HVB Partenaires</a>
+			</span>
+		</div>
+	</div>
+</footer>
+
+	<dialog class="annonce-match" data-annonce="2509-2026-11-03" aria-labelledby="annonce-match-titre">
+		<button type="button" class="annonce-match__fermer" aria-label="Fermer">×</button>
+			<div class="affiche-match affiche-match--visuel">
+					<img class="affiche-match__visuel" src="http://127.0.0.1:9400/wp-content/uploads/test/affiche-cdf.jpg" alt="Affiche du match Harnes VB – Grand Nancy">
+				<div class="affiche-match__infos">
+			<p class="affiche-match__etiquette">Prochain match à domicile<span>Coupe de France</span></p>
+			<p class="affiche-match__equipes" id="annonce-match-titre">
+				<span class="affiche-match__equipe"><img class="blason" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/img/logo-hvb.png" alt=""><b>Harnes VB</b></span>
+				<span class="affiche-match__vs">vs</span>
+				<span class="affiche-match__equipe"><img class="blason blason--club" src="http://127.0.0.1:9400/wp-content/uploads/hvb-logos/equipe-719.png" alt="Logo Grand Nancy"><b>Grand Nancy</b></span>
+			</p>
+			<p class="affiche-match__date">Mardi 3 novembre · 20h<span>Salle Régionale Maréchal · Harnes</span></p>
+			<div class="compte affiche-match__compte" data-compte="2026-11-03T20:00:00">
+				<div><strong data-j>--</strong><span>jours</span></div>
+				<div><strong data-h>--</strong><span>heures</span></div>
+				<div><strong data-m>--</strong><span>min</span></div>
+				<div><strong data-s>--</strong><span>sec</span></div>
+			</div>
+			<a class="bouton bouton--rouge bouton--large affiche-match__bouton" href="https://www.billetweb.fr/coupe-de-france-hvb-vs-grand-nancy"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"/></svg> Réserver ma place</a>
+		</div>
+	</div>
+			<button type="button" class="annonce-match__plus-tard">Continuer sur le site</button>
+	</dialog>
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/harnes-vb/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script data-wp-strategy="defer" defer id="hvb-js" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/js/main.js?ver=1792990005"></script>
+<script data-wp-strategy="defer" defer id="hvb-direct-js" src="http://127.0.0.1:9400/wp-content/themes/harnes-vb/assets/js/direct.js?ver=1793354738"></script>
+</body>
+</html>
